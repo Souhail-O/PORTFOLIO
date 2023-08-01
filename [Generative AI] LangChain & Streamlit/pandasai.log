@@ -1,0 +1,3679 @@
+2023-07-21 11:38:36 [INFO] Question: Explain this docuemnt
+Use 'st.plotly_chart' to display in Streamlit
+2023-07-21 11:38:36 [INFO] Running PandasAI with openai LLM...
+2023-07-21 11:38:36 [INFO] Prompt ID: a5a9a466-cb47-4e8e-a05f-22600f978c44
+2023-07-21 11:38:47 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import streamlit as st
+
+# Create the dataframe
+data = {'Rank': [2, 1, 3, 4, 5],
+        'Name': ['CVS Health', 'UnitedHealth Group', 'Amazon', 'Walmart', 'Apple'],
+        'Industry': ['Retail and Cloud Computing', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Healthcare'],
+        'Revenue (USD millions)': ['292,111', '365,817', '572,754', '469,822', '287,597'],
+        'Revenue growth': ['11.8%', '2.4%', '32.0%', '33.2%', '21.7%'],
+        'Employees': ['1,608,000', '350,000', '2,300,000', '258,000', '154,000'],
+        'Headquarters': ['Seattle, Washington', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Minnetonka, Minnesota', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Display the dataframe
+st.write(df)
+
+# Display the dataframe using plotly chart
+st.plotly_chart(df)
+                        ```
+                    
+2023-07-21 11:43:21 [INFO] Question: Explique moi les données
+2023-07-21 11:43:21 [INFO] Running PandasAI with openai LLM...
+2023-07-21 11:43:21 [INFO] Prompt ID: 72e81ea1-5a3b-457b-ad6f-611f55c1635a
+2023-07-21 11:43:38 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 4, 5, 1, 3],
+        'Name': ['Apple', 'UnitedHealth Group', 'CVS Health', 'Walmart', 'Amazon'],
+        'Industry': ['Retail and Cloud Computing', 'Healthcare', 'Healthcare', 'General merchandisers', 'Electronics industry'],
+        'Revenue (USD millions)': ['292,111', '572,754', '287,597', '469,822', '365,817'],
+        'Revenue growth': ['33.2%', '11.8%', '2.4%', '21.7%', '32.0%'],
+        'Employees': ['258,000', '154,000', '2,300,000', '1,608,000', '350,000'],
+        'Headquarters': ['Seattle, Washington', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Minnetonka, Minnesota', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-21 11:47:55 [INFO] Question: Explique moi les données
+2023-07-21 11:47:55 [INFO] Running PandasAI with openai LLM...
+2023-07-21 11:47:55 [INFO] Prompt ID: cf120f94-b931-47d1-9eaf-6dbf88786f64
+2023-07-21 11:47:55 [INFO] Using cached response
+2023-07-21 11:48:54 [INFO] Question: Explique moi les données
+2023-07-21 11:48:54 [INFO] Running PandasAI with openai LLM...
+2023-07-21 11:48:54 [INFO] Prompt ID: 06639525-f980-45d7-b77b-f23304a276b7
+2023-07-21 11:48:54 [INFO] Using cached response
+2023-07-21 11:59:01 [INFO] Question: Explique moi les données
+2023-07-21 11:59:01 [INFO] Running PandasAI with openai LLM...
+2023-07-21 11:59:01 [INFO] Prompt ID: e279c6c7-ec9d-4cea-b685-1f1b2e424a5f
+2023-07-21 11:59:01 [INFO] Using cached response
+2023-07-21 11:59:08 [INFO] Question: Explique ces données
+2023-07-21 11:59:08 [INFO] Running PandasAI with openai LLM...
+2023-07-21 11:59:08 [INFO] Prompt ID: c9a6d477-c0d6-4420-a74e-cbce6bafc71f
+2023-07-21 11:59:26 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [3, 2, 5, 1, 4],
+        'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'],
+        'Industry': ['Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'],
+        'Revenue (USD millions)': ['469,822', '365,817', '292,111', '572,754', '287,597'],
+        'Revenue growth': ['32.0%', '2.4%', '21.7%', '33.2%', '11.8%'],
+        'Employees': ['2,300,000', '154,000', '258,000', '350,000', '1,608,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Minnetonka, Minnesota', 'Seattle, Washington', 'Cupertino, California']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-21 13:42:49 [INFO] Question: Draw a chart of the Revenue column
+2023-07-21 13:42:49 [INFO] Running PandasAI with openai LLM...
+2023-07-21 13:42:49 [INFO] Prompt ID: cc6a79be-1a4b-4a2c-b20c-0e061f53683d
+2023-07-21 13:42:53 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Remove the commas from the Revenue column and convert it to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+
+# Plot the Revenue column
+plt.plot(df['Revenue (USD millions)'])
+plt.xlabel('Index')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Revenue')
+plt.show()
+                        ```
+                    
+2023-07-21 13:51:53 [INFO] Question: explain this data
+2023-07-21 13:51:53 [INFO] Running PandasAI with openai LLM...
+2023-07-21 13:51:53 [INFO] Prompt ID: 68783387-dadc-4b85-a6a9-8499a1c36c57
+2023-07-21 13:52:15 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 1, 4, 5, 3],
+        'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'],
+        'Industry': ['Retail and Cloud Computing', 'Healthcare', 'General merchandisers', 'Electronics industry', 'Healthcare'],
+        'Revenue (USD millions)': ['292,111', '469,822', '572,754', '287,597', '365,817'],
+        'Revenue growth': ['33.2%', '2.4%', '21.7%', '11.8%', '32.0%'],
+        'Employees': ['258,000', '154,000', '350,000', '2,300,000', '1,608,000'],
+        'Headquarters': ['Cupertino, California', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-21 13:52:15 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 1, 4, 5, 3], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['Retail and Cloud Computing', 'Healthcare', 'General merchandisers', 'Electronics industry', 'Healthcare'], 'Revenue (USD millions)': ['292,111', '469,822', '572,754', '287,597', '365,817'], 'Revenue growth': ['33.2%', '2.4%', '21.7%', '11.8%', '32.0%'], 'Employees': ['258,000', '154,000', '350,000', '2,300,000', '1,608,000'], 'Headquarters': ['Cupertino, California', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+print(df)
+```
+2023-07-21 13:52:15 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 13:52:15 [INFO] Executed in: 21.507944345474243s
+2023-07-21 13:52:42 [INFO] Question: draw a chart of companies' revenues
+2023-07-21 13:52:42 [INFO] Running PandasAI with openai LLM...
+2023-07-21 13:52:42 [INFO] Prompt ID: 4421eda9-ea2b-4645-be97-425161a487de
+2023-07-21 13:52:47 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Remove the commas from the revenue column and convert it to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+
+# Sort the dataframe by revenue in descending order
+df = df.sort_values('Revenue (USD millions)', ascending=False)
+
+# Plot the chart
+plt.figure(figsize=(12, 6))
+plt.bar(df['Name'], df['Revenue (USD millions)'])
+plt.xlabel('Company')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Companies Revenue')
+plt.xticks(rotation=90)
+plt.show()
+                        ```
+                    
+2023-07-21 13:52:47 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+plt.figure(figsize=(12, 6))
+plt.bar(df['Name'], df['Revenue (USD millions)'])
+plt.xlabel('Company')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Companies Revenue')
+plt.xticks(rotation=90)
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 13:52:49 [INFO] Answer: None
+2023-07-21 13:52:49 [INFO] Executed in: 6.777217149734497s
+2023-07-21 14:04:06 [INFO] Question: How many companies are there in this DF ?
+2023-07-21 14:04:06 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:04:06 [INFO] Prompt ID: 899fb1ba-b2e0-43b2-a3f7-62e92f90c937
+2023-07-21 14:04:07 [INFO] 
+                        Code generated:
+                        ```
+                        num_companies = len(df)
+num_companies
+                        ```
+                    
+2023-07-21 14:04:07 [INFO] 
+Code running:
+```
+num_companies = len(df)
+num_companies
+```
+2023-07-21 14:04:07 [INFO] Answer: 100
+2023-07-21 14:04:07 [INFO] Executed in: 1.662477970123291s
+2023-07-21 14:04:48 [INFO] Question: draw a graph of how many companies per state 
+2023-07-21 14:04:48 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:04:48 [INFO] Prompt ID: 9367ec5b-463c-47df-b536-58af6b50b587
+2023-07-21 14:04:52 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the dataframe
+df = pd.read_csv('data.csv')
+
+# Count the number of companies per state
+state_counts = df['Headquarters'].str.split(',').str[-1].value_counts()
+
+# Plot the graph
+state_counts.plot(kind='bar')
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Number of Companies per State')
+plt.show()
+                        ```
+                    
+2023-07-21 14:04:52 [INFO] 
+Code running:
+```
+state_counts = df['Headquarters'].str.split(',').str[-1].value_counts()
+state_counts.plot(kind='bar')
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Number of Companies per State')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 14:04:53 [INFO] Answer: None
+2023-07-21 14:04:53 [INFO] Executed in: 4.609360456466675s
+2023-07-21 14:06:44 [INFO] Question: How many states have headquarters in them ?
+2023-07-21 14:06:44 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:06:44 [INFO] Prompt ID: 79b1b8a1-a058-4d0d-bb69-965974e6009f
+2023-07-21 14:06:56 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [5, 1, 3, 2, 4],
+        'Name': ['Walmart', 'UnitedHealth Group', 'CVS Health', 'Amazon', 'Apple'],
+        'Industry': ['Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Electronics industry'],
+        'Revenue (USD millions)': ['292,111', '572,754', '365,817', '287,597', '469,822'],
+        'Revenue growth': ['32.0%', '21.7%', '11.8%', '33.2%', '2.4%'],
+        'Employees': ['154,000', '350,000', '1,608,000', '258,000', '2,300,000'],
+        'Headquarters': ['Cupertino, California', 'Bentonville, Arkansas', 'Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Extract the states from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the unique states
+num_states = df['State'].nunique()
+
+num_states
+                        ```
+                    
+2023-07-21 14:07:18 [INFO] Question: How many companies are there ?
+2023-07-21 14:07:18 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:07:18 [INFO] Prompt ID: d6db8268-23c4-42df-b6ff-2293352fbfc5
+2023-07-21 14:07:20 [INFO] 
+                        Code generated:
+                        ```
+                        num_companies = len(df)
+num_companies
+                        ```
+                    
+2023-07-21 14:11:31 [INFO] Question: How many states have headquarters in them ?
+2023-07-21 14:11:31 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:11:31 [INFO] Prompt ID: 051c768f-b741-4cd4-9e73-61eea00fbe44
+2023-07-21 14:11:31 [INFO] Using cached response
+2023-07-21 14:13:57 [INFO] Question: How many states have companies in them
+2023-07-21 14:13:57 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:13:57 [INFO] Prompt ID: 0f28173c-27f2-469c-9960-327689969d00
+2023-07-21 14:14:01 [INFO] 
+                        Code generated:
+                        ```
+                        states = df['Headquarters'].apply(lambda x: x.split(", ")[-1])
+num_states = len(states.unique())
+num_states
+                        ```
+                    
+2023-07-21 14:14:01 [INFO] 
+Code running:
+```
+states = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+num_states = len(states.unique())
+num_states
+```
+2023-07-21 14:14:01 [INFO] Answer: 28
+2023-07-21 14:14:01 [INFO] Executed in: 3.653191089630127s
+2023-07-21 14:14:18 [INFO] Question: Explain the data in this table
+2023-07-21 14:14:18 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:14:18 [INFO] Prompt ID: 475f25fb-d87e-4606-88b8-55ace19c543e
+2023-07-21 14:14:32 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [3, 2, 4, 5, 1],
+        'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'],
+        'Industry': ['Healthcare', 'Healthcare', 'General merchandisers', 'Electronics industry', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['365,817', '287,597', '572,754', '469,822', '292,111'],
+        'Revenue growth': ['2.4%', '32.0%', '33.2%', '21.7%', '11.8%'],
+        'Employees': ['154,000', '2,300,000', '1,608,000', '350,000', '258,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-21 14:14:32 [INFO] 
+Code running:
+```
+data = {'Rank': [3, 2, 4, 5, 1], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['Healthcare', 'Healthcare', 'General merchandisers', 'Electronics industry', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['365,817', '287,597', '572,754', '469,822', '292,111'], 'Revenue growth': ['2.4%', '32.0%', '33.2%', '21.7%', '11.8%'], 'Employees': ['154,000', '2,300,000', '1,608,000', '350,000', '258,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas']}
+print(df)
+```
+2023-07-21 14:14:32 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 14:14:32 [INFO] Executed in: 13.483055114746094s
+2023-07-21 14:14:58 [INFO] Question: Explain the data in this table
+2023-07-21 14:14:58 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:14:58 [INFO] Prompt ID: bc27dd46-87f8-472e-a653-df6ddf2ec9b4
+2023-07-21 14:14:58 [INFO] Using cached response
+2023-07-21 14:14:58 [INFO] 
+Code running:
+```
+data = {'Rank': [3, 2, 4, 5, 1], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['Healthcare', 'Healthcare', 'General merchandisers', 'Electronics industry', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['365,817', '287,597', '572,754', '469,822', '292,111'], 'Revenue growth': ['2.4%', '32.0%', '33.2%', '21.7%', '11.8%'], 'Employees': ['154,000', '2,300,000', '1,608,000', '350,000', '258,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas']}
+print(df)
+```
+2023-07-21 14:14:58 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 14:14:58 [INFO] Executed in: 0.18504953384399414s
+2023-07-21 14:15:06 [INFO] Question: Explain the data in this table
+2023-07-21 14:15:06 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:15:06 [INFO] Prompt ID: bc38cb2b-7d28-4940-a677-bc40e1720053
+2023-07-21 14:15:06 [INFO] Using cached response
+2023-07-21 14:15:06 [INFO] 
+Code running:
+```
+data = {'Rank': [3, 2, 4, 5, 1], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['Healthcare', 'Healthcare', 'General merchandisers', 'Electronics industry', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['365,817', '287,597', '572,754', '469,822', '292,111'], 'Revenue growth': ['2.4%', '32.0%', '33.2%', '21.7%', '11.8%'], 'Employees': ['154,000', '2,300,000', '1,608,000', '350,000', '258,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas']}
+print(df)
+```
+2023-07-21 14:15:06 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 14:15:06 [INFO] Executed in: 0.1470329761505127s
+2023-07-21 14:15:15 [INFO] Question: Explain the data 
+2023-07-21 14:15:15 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:15:15 [INFO] Prompt ID: 4730ff03-8763-4816-aba4-5c6c70aecfe3
+2023-07-21 14:15:30 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [4, 1, 2, 3, 5],
+        'Name': ['CVS Health', 'Amazon', 'UnitedHealth Group', 'Apple', 'Walmart'],
+        'Industry': ['Healthcare', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['365,817', '572,754', '469,822', '287,597', '292,111'],
+        'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'],
+        'Employees': ['258,000', '2,300,000', '350,000', '1,608,000', '154,000'],
+        'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Seattle, Washington', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-21 14:15:30 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 1, 2, 3, 5], 'Name': ['CVS Health', 'Amazon', 'UnitedHealth Group', 'Apple', 'Walmart'], 'Industry': ['Healthcare', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['365,817', '572,754', '469,822', '287,597', '292,111'], 'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'], 'Employees': ['258,000', '2,300,000', '350,000', '1,608,000', '154,000'], 'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Seattle, Washington', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']}
+print(df)
+```
+2023-07-21 14:15:30 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 14:15:30 [INFO] Executed in: 14.654759168624878s
+2023-07-21 14:21:38 [INFO] Question: How many companies are there in California ? 
+2023-07-21 14:21:38 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:21:38 [INFO] Prompt ID: 8f901c84-5b2b-4318-8a71-64d56cd62d17
+2023-07-21 14:21:39 [INFO] 
+                        Code generated:
+                        ```
+                        count_california = df[df['Headquarters'].str.contains('California')].shape[0]
+count_california
+                        ```
+                    
+2023-07-21 14:21:39 [INFO] 
+Code running:
+```
+count_california = df[df['Headquarters'].str.contains('California')].shape[0]
+count_california
+```
+2023-07-21 14:21:39 [INFO] Answer: 9
+2023-07-21 14:21:39 [INFO] Executed in: 1.6020517349243164s
+2023-07-21 14:22:25 [INFO] Question: How many companies are there in California ? give me list of names and revenues and employees 
+2023-07-21 14:22:26 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:22:26 [INFO] Prompt ID: 593a1598-841d-451a-9b44-e523ef2bfd3f
+2023-07-21 14:22:30 [INFO] 
+                        Code generated:
+                        ```
+                        # Filter the dataframe to include only companies in California
+california_companies = df[df['Headquarters'].str.contains('California')]
+
+# Get the number of companies in California
+num_california_companies = len(california_companies)
+
+# Get the list of names, revenues, and employees of the companies in California
+california_company_info = california_companies[['Name', 'Revenue (USD millions)', 'Employees']]
+
+num_california_companies, california_company_info
+                        ```
+                    
+2023-07-21 14:22:30 [INFO] 
+Code running:
+```
+california_companies = df[df['Headquarters'].str.contains('California')]
+num_california_companies = len(california_companies)
+california_company_info = california_companies[['Name', 'Revenue (USD millions)', 'Employees']]
+num_california_companies, california_company_info
+```
+2023-07-21 14:22:30 [INFO] Answer: 9                        Name Revenue (USD millions) Employees
+2                     Apple                365,817   154,000
+7                  Alphabet                257,637   156,000
+15      Chevron Corporation                162,465    42,595
+26           Meta Platforms                117,385    71,970
+40              Wells Fargo                 82,407   247,848
+45                    Intel                 79,024   121,100
+52  The Walt Disney Company                 67,418   171,000
+58                       HP                 63,487    51,000
+74                    Cisco                 49,818    79,500
+2023-07-21 14:22:30 [INFO] Executed in: 4.8438897132873535s
+2023-07-21 14:23:14 [INFO] Question: draw a barplot of companies by state
+2023-07-21 14:23:14 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:23:14 [INFO] Prompt ID: 8d86306c-df60-455c-9571-a09f80939dc6
+2023-07-21 14:23:27 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create the dataframe
+data = {'Rank': [1, 2, 5, 4, 3],
+        'Name': ['Amazon', 'Apple', 'Walmart', 'UnitedHealth Group', 'CVS Health'],
+        'Industry': ['Retail and Cloud Computing', 'Healthcare', 'Electronics industry', 'Healthcare', 'General merchandisers'],
+        'Revenue (USD millions)': ['469,822', '287,597', '292,111', '365,817', '572,754'],
+        'Revenue growth': ['11.8%', '21.7%', '33.2%', '32.0%', '2.4%'],
+        'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'],
+        'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the number of companies by state
+state_counts = df['State'].value_counts()
+
+# Plot the barplot
+plt.figure(figsize=(10, 6))
+state_counts.plot(kind='bar')
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Companies by State')
+plt.show()
+                        ```
+                    
+2023-07-21 14:23:27 [INFO] 
+Code running:
+```
+data = {'Rank': [1, 2, 5, 4, 3], 'Name': ['Amazon', 'Apple', 'Walmart', 'UnitedHealth Group', 'CVS Health'], 'Industry': ['Retail and Cloud Computing', 'Healthcare', 'Electronics industry', 'Healthcare', 'General merchandisers'], 'Revenue (USD millions)': ['469,822', '287,597', '292,111', '365,817', '572,754'], 'Revenue growth': ['11.8%', '21.7%', '33.2%', '32.0%', '2.4%'], 'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'], 'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_counts = df['State'].value_counts()
+plt.figure(figsize=(10, 6))
+state_counts.plot(kind='bar')
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Companies by State')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 14:23:27 [INFO] Answer: None
+2023-07-21 14:23:27 [INFO] Executed in: 13.691760063171387s
+2023-07-21 14:24:49 [INFO] Question: draw a barplot of companies by state
+2023-07-21 14:24:49 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:24:49 [INFO] Prompt ID: 812e7fc9-9ea6-47be-91a8-9d9f84850a85
+2023-07-21 14:24:49 [INFO] Using cached response
+2023-07-21 14:26:17 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:26:17 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:26:17 [INFO] Prompt ID: 02984dc1-48d7-4445-aa25-7403d39d8524
+2023-07-21 14:26:18 [INFO] 
+                        Code generated:
+                        ```
+                        df['Headquarters'].str.split(',').str[-1].value_counts()
+                        ```
+                    
+2023-07-21 14:27:38 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:27:38 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:27:38 [INFO] Prompt ID: 787c70d6-b2b4-4dba-a6e7-c30b24f9b6c5
+2023-07-21 14:27:38 [INFO] Using cached response
+2023-07-21 14:28:41 [INFO] Question: How many companies are there in California ?
+2023-07-21 14:28:41 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:28:41 [INFO] Prompt ID: 141f959e-68dd-4783-98e4-7f76189f4e3d
+2023-07-21 14:28:44 [INFO] 
+                        Code generated:
+                        ```
+                        count_california = df[df['Headquarters'].str.contains('California')].shape[0]
+count_california
+                        ```
+                    
+2023-07-21 14:30:22 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:30:22 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:30:22 [INFO] Prompt ID: 041d5b1b-cd78-4e9c-83fe-c0f8145f0efd
+2023-07-21 14:30:22 [INFO] Using cached response
+2023-07-21 14:30:22 [INFO] 
+Code running:
+```
+df['Headquarters'].str.split(',').str[-1].value_counts()
+```
+2023-07-21 14:30:22 [INFO] Answer:  New York          15
+ Texas             14
+ California         9
+ Illinois           9
+ Massachusetts      6
+ Ohio               6
+ Minnesota          4
+ North Carolina     3
+ Pennsylvania       3
+ Georgia            3
+ New Jersey         3
+ Michigan           3
+ Washington         3
+ Virginia           2
+ Tennessee          2
+ Arkansas           2
+ Connecticut        2
+ D.C.               1
+ Missouri           1
+ Indiana            1
+ Kentucky           1
+ Nebraska           1
+ Idaho              1
+ Maryland           1
+ Rhode Island       1
+ Florida            1
+ Oregon             1
+ Wisconsin          1
+Name: Headquarters, dtype: int64
+2023-07-21 14:30:22 [INFO] Executed in: 0.04829978942871094s
+2023-07-21 14:30:48 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:30:48 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:30:48 [INFO] Prompt ID: 4d8a793a-460b-4460-828f-8b1278339756
+2023-07-21 14:30:48 [INFO] Using cached response
+2023-07-21 14:30:48 [INFO] 
+Code running:
+```
+df['Headquarters'].str.split(',').str[-1].value_counts()
+```
+2023-07-21 14:30:48 [INFO] Answer:  New York          15
+ Texas             14
+ California         9
+ Illinois           9
+ Massachusetts      6
+ Ohio               6
+ Minnesota          4
+ North Carolina     3
+ Pennsylvania       3
+ Georgia            3
+ New Jersey         3
+ Michigan           3
+ Washington         3
+ Virginia           2
+ Tennessee          2
+ Arkansas           2
+ Connecticut        2
+ D.C.               1
+ Missouri           1
+ Indiana            1
+ Kentucky           1
+ Nebraska           1
+ Idaho              1
+ Maryland           1
+ Rhode Island       1
+ Florida            1
+ Oregon             1
+ Wisconsin          1
+Name: Headquarters, dtype: int64
+2023-07-21 14:30:48 [INFO] Executed in: 0.027769804000854492s
+2023-07-21 14:31:15 [INFO] Question: How many companies are there by state ?  give the result as (state, number, total revenues)
+2023-07-21 14:31:15 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:31:15 [INFO] Prompt ID: ce75ba2d-d913-40e6-9299-d48fbab53121
+2023-07-21 14:31:23 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Read the dataframe
+df = pd.read_csv('data.csv')
+
+# Group the data by state and count the number of companies in each state
+state_counts = df['Headquarters'].str.split(', ').str[-1].value_counts().reset_index()
+state_counts.columns = ['State', 'Number of Companies']
+
+# Calculate the total revenue for each state
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+state_revenues = df.groupby(df['Headquarters'].str.split(', ').str[-1])['Revenue (USD millions)'].sum().reset_index()
+state_revenues.columns = ['State', 'Total Revenue']
+
+# Merge the state counts and state revenues dataframes
+result = pd.merge(state_counts, state_revenues, on='State')
+
+result
+                        ```
+                    
+2023-07-21 14:31:23 [INFO] 
+Code running:
+```
+state_counts = df['Headquarters'].str.split(', ').str[-1].value_counts().reset_index()
+state_counts.columns = ['State', 'Number of Companies']
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+state_revenues = df.groupby(df['Headquarters'].str.split(', ').str[-1])['Revenue (USD millions)'].sum().reset_index()
+state_revenues.columns = ['State', 'Total Revenue']
+result = pd.merge(state_counts, state_revenues, on='State')
+result
+```
+2023-07-21 14:31:23 [INFO] Answer:              State  Number of Companies  Total Revenue
+0         New York                   15      1047340.0
+1            Texas                   14      1404633.0
+2       California                    9      1245458.0
+3         Illinois                    9       626726.0
+4    Massachusetts                    6       325877.0
+5             Ohio                    6       612583.0
+6        Minnesota                    4       483811.0
+7   North Carolina                    3       226585.0
+8     Pennsylvania                    3       375074.0
+9          Georgia                    3       287099.0
+10      New Jersey                    3       215925.0
+11        Michigan                    3       318313.0
+12      Washington                    3       863838.0
+13        Virginia                    2       104367.0
+14       Tennessee                    2       142711.0
+15        Arkansas                    2       619803.0
+16     Connecticut                    2       225760.0
+17            D.C.                    1       101543.0
+18        Missouri                    1       125982.0
+19         Indiana                    1       138639.0
+20        Kentucky                    1        83064.0
+21        Nebraska                    1       276094.0
+22           Idaho                    1        69690.0
+23        Maryland                    1        67044.0
+24    Rhode Island                    1       292111.0
+25         Florida                    1        48394.0
+26          Oregon                    1        44538.0
+27       Wisconsin                    1        36751.0
+2023-07-21 14:31:23 [INFO] Executed in: 8.219949960708618s
+2023-07-21 14:32:32 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:32:32 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:32:32 [INFO] Prompt ID: 148b35cd-0d81-41cf-9c32-cc8b26ea1cad
+2023-07-21 14:32:32 [INFO] Using cached response
+2023-07-21 14:32:32 [INFO] 
+Code running:
+```
+df['Headquarters'].str.split(',').str[-1].value_counts()
+```
+2023-07-21 14:32:32 [INFO] Answer:  New York          15
+ Texas             14
+ California         9
+ Illinois           9
+ Massachusetts      6
+ Ohio               6
+ Minnesota          4
+ North Carolina     3
+ Pennsylvania       3
+ Georgia            3
+ New Jersey         3
+ Michigan           3
+ Washington         3
+ Virginia           2
+ Tennessee          2
+ Arkansas           2
+ Connecticut        2
+ D.C.               1
+ Missouri           1
+ Indiana            1
+ Kentucky           1
+ Nebraska           1
+ Idaho              1
+ Maryland           1
+ Rhode Island       1
+ Florida            1
+ Oregon             1
+ Wisconsin          1
+Name: Headquarters, dtype: int64
+2023-07-21 14:32:32 [INFO] Executed in: 0.024970054626464844s
+2023-07-21 14:38:32 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:38:32 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:38:32 [INFO] Prompt ID: d78ee2c6-21ba-4199-bbd0-4f715fb1fcc4
+2023-07-21 14:38:32 [INFO] Using cached response
+2023-07-21 14:38:32 [INFO] 
+Code running:
+```
+df['Headquarters'].str.split(',').str[-1].value_counts()
+```
+2023-07-21 14:38:32 [INFO] Answer:  New York          15
+ Texas             14
+ California         9
+ Illinois           9
+ Massachusetts      6
+ Ohio               6
+ Minnesota          4
+ North Carolina     3
+ Pennsylvania       3
+ Georgia            3
+ New Jersey         3
+ Michigan           3
+ Washington         3
+ Virginia           2
+ Tennessee          2
+ Arkansas           2
+ Connecticut        2
+ D.C.               1
+ Missouri           1
+ Indiana            1
+ Kentucky           1
+ Nebraska           1
+ Idaho              1
+ Maryland           1
+ Rhode Island       1
+ Florida            1
+ Oregon             1
+ Wisconsin          1
+Name: Headquarters, dtype: int64
+2023-07-21 14:38:32 [INFO] Executed in: 0.016051530838012695s
+2023-07-21 14:39:42 [INFO] Question: How many companies are there by state ? 
+2023-07-21 14:39:42 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:39:42 [INFO] Prompt ID: 2e81bd6e-0986-40c2-84a1-aaa4237f66a7
+2023-07-21 14:39:42 [INFO] Using cached response
+2023-07-21 14:39:42 [INFO] 
+Code running:
+```
+df['Headquarters'].str.split(',').str[-1].value_counts()
+```
+2023-07-21 14:39:42 [INFO] Answer:  New York          15
+ Texas             14
+ California         9
+ Illinois           9
+ Massachusetts      6
+ Ohio               6
+ Minnesota          4
+ North Carolina     3
+ Pennsylvania       3
+ Georgia            3
+ New Jersey         3
+ Michigan           3
+ Washington         3
+ Virginia           2
+ Tennessee          2
+ Arkansas           2
+ Connecticut        2
+ D.C.               1
+ Missouri           1
+ Indiana            1
+ Kentucky           1
+ Nebraska           1
+ Idaho              1
+ Maryland           1
+ Rhode Island       1
+ Florida            1
+ Oregon             1
+ Wisconsin          1
+Name: Headquarters, dtype: int64
+2023-07-21 14:39:42 [INFO] Executed in: 0.047066688537597656s
+2023-07-21 14:40:13 [INFO] Question: How many companies are there by state ? (i need State, number of companies, total revenues, total employees)
+2023-07-21 14:40:13 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:40:13 [INFO] Prompt ID: caf70ee7-b11e-4e6d-a847-3d84c48e6883
+2023-07-21 14:40:21 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Read the dataframe
+df = pd.read_csv("data.csv")
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(", ")[-1])
+
+# Group by state and count the number of companies
+companies_by_state = df.groupby('State').size().reset_index(name='Number of Companies')
+
+# Group by state and sum the revenue and employees
+revenue_by_state = df.groupby('State')['Revenue (USD millions)'].sum().reset_index(name='Total Revenue')
+employees_by_state = df.groupby('State')['Employees'].sum().reset_index(name='Total Employees')
+
+# Merge the dataframes
+result = pd.merge(companies_by_state, revenue_by_state, on='State')
+result = pd.merge(result, employees_by_state, on='State')
+
+result
+                        ```
+                    
+2023-07-21 14:40:21 [INFO] 
+Code running:
+```
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+companies_by_state = df.groupby('State').size().reset_index(name='Number of Companies')
+revenue_by_state = df.groupby('State')['Revenue (USD millions)'].sum().reset_index(name='Total Revenue')
+employees_by_state = df.groupby('State')['Employees'].sum().reset_index(name='Total Employees')
+result = pd.merge(companies_by_state, revenue_by_state, on='State')
+result = pd.merge(result, employees_by_state, on='State')
+result
+```
+2023-07-21 14:40:21 [INFO] Answer:              State  ...                                    Total Employees
+0         Arkansas  ...                                   2,300,000137,000
+1       California  ...  154,000156,00042,59571,970247,848121,100171,00...
+2      Connecticut  ...                                       72,96393,700
+3             D.C.  ...                                              7,400
+4          Florida  ...                                            232,000
+5          Georgia  ...                               490,600400,94579,000
+6            Idaho  ...                                            300,000
+7         Illinois  ...  258,50039,97953,586142,00050,00054,500107,7007...
+8          Indiana  ...                                             98,200
+9         Kentucky  ...                                             95,500
+10        Maryland  ...                                            114,000
+11   Massachusetts  ...          168,000174,000110,000340,00045,000129,000
+12        Michigan  ...                               183,000157,00035,700
+13       Minnesota  ...                          350,000450,00081,3759,941
+14        Missouri  ...                                             72,500
+15        Nebraska  ...                                            372,000
+16      New Jersey  ...                                141,70040,91667,500
+17        New York  ...  118,400271,02579,000221,768309,000297,80043,00...
+18  North Carolina  ...                               270,000208,24828,800
+19            Ohio  ...             46,82717,700420,000101,00049,07724,134
+20          Oregon  ...                                             73,300
+21    Pennsylvania  ...                                40,000189,00097,000
+22    Rhode Island  ...                                            258,000
+23       Tennessee  ...                                     484,000244,000
+24           Texas  ...  63,00067,500202,60014,0009,804133,00012,55899,...
+25        Virginia  ...                                       7,301103,100
+26      Washington  ...                            1,608,000181,000288,000
+27       Wisconsin  ...                                              7,585
+
+[28 rows x 4 columns]
+2023-07-21 14:40:21 [INFO] Executed in: 8.46362042427063s
+2023-07-21 14:40:48 [INFO] Question: How many companies are there by state ? (i need State, number of companies, total revenues, total employees, state's main employer)
+2023-07-21 14:40:48 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:40:48 [INFO] Prompt ID: ef300c47-9ce9-44bc-8dc7-c75b3ddaf0bf
+2023-07-21 14:40:56 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Read the dataframe
+df = pd.read_csv('data.csv')
+
+# Remove commas from Revenue and Employees columns and convert them to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Extract state from Headquarters column
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+
+# Group by state and count the number of companies, sum the revenues and employees, and find the main employer
+state_summary = df.groupby('State').agg({'Name': 'count', 'Revenue (USD millions)': 'sum', 'Employees': 'sum', 'Name': 'first'})
+
+state_summary.rename(columns={'Name': 'Main Employer'}, inplace=True)
+
+state_summary
+                        ```
+                    
+2023-07-21 14:40:56 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+state_summary = df.groupby('State').agg({'Name': 'count', 'Revenue (USD millions)': 'sum', 'Employees': 'sum', 'Name': 'first'})
+state_summary.rename(columns={'Name': 'Main Employer'}, inplace=True)
+state_summary
+```
+2023-07-21 14:40:56 [INFO] Answer:                            Main Employer  Revenue (USD millions)  Employees
+State                                                                      
+Arkansas                         Walmart                619803.0    2437000
+California                         Apple               1245458.0    1095013
+Connecticut                        Cigna                225760.0     166663
+D.C.                          Fannie Mae                101543.0       7400
+Florida                           Publix                 48394.0     232000
+Georgia                   The Home Depot                287099.0     970545
+Idaho                         Albertsons                 69690.0     300000
+Illinois        Walgreens Boots Alliance                626726.0     894815
+Indiana                  Elevance Health                138639.0      98200
+Kentucky                          Humana                 83064.0      95500
+Maryland                 Lockheed Martin                 67044.0     114000
+Massachusetts           General Electric                325877.0     966000
+Michigan              Ford Motor Company                318313.0     375700
+Minnesota             UnitedHealth Group                483811.0     891316
+Missouri                         Centene                125982.0      72500
+Nebraska              Berkshire Hathaway                276094.0     372000
+New Jersey             Johnson & Johnson                215925.0     250116
+New York          Verizon Communications               1047340.0    1623158
+North Carolina                    Lowe's                226585.0     507048
+Ohio                     Cardinal Health                612583.0     658738
+Oregon                              Nike                 44538.0      73300
+Pennsylvania           AmerisourceBergen                375074.0     326000
+Rhode Island                  CVS Health                292111.0     258000
+Tennessee                          FedEx                142711.0     728000
+Texas                        Exxon Mobil               1404633.0     849708
+Virginia                     Freddie Mac                104367.0     110401
+Washington                        Amazon                863838.0    2077000
+Wisconsin            Northwestern Mutual                 36751.0       7585
+2023-07-21 14:40:56 [INFO] Executed in: 7.915092945098877s
+2023-07-21 14:41:17 [INFO] Question: Explain this data please
+2023-07-21 14:41:17 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:41:17 [INFO] Prompt ID: f5b1c1f7-3067-4807-b48d-5edf5f021eaa
+2023-07-21 14:41:31 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [3, 4, 5, 2, 1],
+        'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'],
+        'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Healthcare', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['292,111', '365,817', '287,597', '572,754', '469,822'],
+        'Revenue growth': ['11.8%', '32.0%', '21.7%', '33.2%', '2.4%'],
+        'Employees': ['350,000', '258,000', '1,608,000', '154,000', '2,300,000'],
+        'Headquarters': ['Bentonville, Arkansas', 'Seattle, Washington', 'Cupertino, California', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-21 14:41:31 [INFO] 
+Code running:
+```
+data = {'Rank': [3, 4, 5, 2, 1], 'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'], 'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['292,111', '365,817', '287,597', '572,754', '469,822'], 'Revenue growth': ['11.8%', '32.0%', '21.7%', '33.2%', '2.4%'], 'Employees': ['350,000', '258,000', '1,608,000', '154,000', '2,300,000'], 'Headquarters': ['Bentonville, Arkansas', 'Seattle, Washington', 'Cupertino, California', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island']}
+print(df)
+```
+2023-07-21 14:41:32 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 14:41:32 [INFO] Executed in: 14.811388731002808s
+2023-07-21 14:42:47 [INFO] Question: Explain this data please and summarize it
+2023-07-21 14:42:47 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:42:47 [INFO] Prompt ID: 7fd77a25-98c3-4d52-b4bc-27d4b9530549
+2023-07-21 14:43:04 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [4, 3, 1, 2, 5],
+        'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'],
+        'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'],
+        'Revenue (USD millions)': ['287,597', '572,754', '292,111', '365,817', '469,822'],
+        'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'],
+        'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+
+# Summarize the data
+summary = df.describe()
+print(summary)
+                        ```
+                    
+2023-07-21 14:43:04 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 3, 1, 2, 5], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'], 'Revenue (USD millions)': ['287,597', '572,754', '292,111', '365,817', '469,822'], 'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'], 'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+print(df)
+summary = df.describe()
+print(summary)
+```
+2023-07-21 14:43:04 [INFO] Answer: Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+             Rank
+count  100.000000
+mean    50.500000
+std     29.011492
+min      1.000000
+25%     25.750000
+50%     50.500000
+75%     75.250000
+max    100.000000
+2023-07-21 14:43:04 [INFO] Executed in: 16.933740615844727s
+2023-07-21 14:46:00 [INFO] Question: Explain this data please and summarize it
+2023-07-21 14:46:00 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:46:00 [INFO] Prompt ID: bb5e25b9-a237-4700-b1f7-7a9ae16dd234
+2023-07-21 14:46:00 [INFO] Using cached response
+2023-07-21 14:46:00 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 3, 1, 2, 5], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'], 'Revenue (USD millions)': ['287,597', '572,754', '292,111', '365,817', '469,822'], 'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'], 'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+print(df)
+summary = df.describe()
+print(summary)
+```
+2023-07-21 14:46:00 [INFO] Answer: Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+             Rank
+count  100.000000
+mean    50.500000
+std     29.011492
+min      1.000000
+25%     25.750000
+50%     50.500000
+75%     75.250000
+max    100.000000
+2023-07-21 14:46:00 [INFO] Executed in: 0.09905385971069336s
+2023-07-21 14:47:54 [INFO] Question: Explain this data please and summarize it
+2023-07-21 14:47:54 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:47:54 [INFO] Prompt ID: 3f7aa3fd-48ca-48aa-b509-4c5edf1e3d31
+2023-07-21 14:47:54 [INFO] Using cached response
+2023-07-21 14:47:54 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 3, 1, 2, 5], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'], 'Revenue (USD millions)': ['287,597', '572,754', '292,111', '365,817', '469,822'], 'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'], 'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+print(df)
+summary = df.describe()
+print(summary)
+```
+2023-07-21 14:47:54 [INFO] Answer: Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+             Rank
+count  100.000000
+mean    50.500000
+std     29.011492
+min      1.000000
+25%     25.750000
+50%     50.500000
+75%     75.250000
+max    100.000000
+2023-07-21 14:47:54 [INFO] Executed in: 0.06737518310546875s
+2023-07-21 14:49:43 [INFO] Question: Explain this data please and summarize it
+2023-07-21 14:49:43 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:49:43 [INFO] Prompt ID: 2483d223-d993-4553-b801-ac0eac7d5e2b
+2023-07-21 14:49:43 [INFO] Using cached response
+2023-07-21 14:49:43 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 3, 1, 2, 5], 'Name': ['CVS Health', 'Apple', 'Walmart', 'Amazon', 'UnitedHealth Group'], 'Industry': ['General merchandisers', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'], 'Revenue (USD millions)': ['287,597', '572,754', '292,111', '365,817', '469,822'], 'Revenue growth': ['21.7%', '11.8%', '33.2%', '2.4%', '32.0%'], 'Employees': ['154,000', '2,300,000', '258,000', '1,608,000', '350,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas', 'Seattle, Washington', 'Minnetonka, Minnesota']}
+print(df)
+summary = df.describe()
+print(summary)
+```
+2023-07-21 14:49:43 [INFO] Answer: Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+             Rank
+count  100.000000
+mean    50.500000
+std     29.011492
+min      1.000000
+25%     25.750000
+50%     50.500000
+75%     75.250000
+max    100.000000
+2023-07-21 14:49:43 [INFO] Executed in: 0.07044529914855957s
+2023-07-21 14:51:14 [INFO] Question: What's the biggest company by revenue
+2023-07-21 14:51:14 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:51:14 [INFO] Prompt ID: b5bf87e0-f153-4a20-bc67-0878cb3b4ed8
+2023-07-21 14:51:17 [INFO] 
+                        Code generated:
+                        ```
+                        df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+biggest_company = df[df['Revenue (USD millions)'] == df['Revenue (USD millions)'].max()]['Name'].values[0]
+biggest_company
+                        ```
+                    
+2023-07-21 14:51:17 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+biggest_company = df[df['Revenue (USD millions)'] == df['Revenue (USD millions)'].max()]['Name'].values[0]
+biggest_company
+```
+2023-07-21 14:51:17 [INFO] Answer: Walmart
+2023-07-21 14:51:17 [INFO] Executed in: 3.148634195327759s
+2023-07-21 14:51:50 [INFO] Question: What is its revenue and number of employees
+2023-07-21 14:51:50 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:51:50 [INFO] Prompt ID: 9fc3f889-dc9d-461b-a9df-cb002640b135
+2023-07-21 14:51:52 [INFO] 
+                        Code generated:
+                        ```
+                        revenue = df['Revenue (USD millions)']
+employees = df['Employees']
+
+print("Revenue:", revenue)
+print("Number of employees:", employees)
+                        ```
+                    
+2023-07-21 14:51:52 [INFO] 
+Code running:
+```
+revenue = df['Revenue (USD millions)']
+employees = df['Employees']
+print('Revenue:', revenue)
+print('Number of employees:', employees)
+```
+2023-07-21 14:51:52 [INFO] Answer: Revenue: 0     572,754
+1     469,822
+2     365,817
+3     292,111
+4     287,597
+       ...   
+95     38,469
+96     38,448
+97     37,470
+98     36,751
+99     36,484
+Name: Revenue (USD millions), Length: 100, dtype: object
+Number of employees: 0     2,300,000
+1     1,608,000
+2       154,000
+3       258,000
+4       350,000
+        ...    
+95      103,100
+96        9,941
+97       37,335
+98        7,585
+99       28,800
+Name: Employees, Length: 100, dtype: object
+2023-07-21 14:51:52 [INFO] Executed in: 2.3184092044830322s
+2023-07-21 14:58:31 [INFO] Question: What's the biggest company in Arkansas ? Also give its details
+2023-07-21 14:58:31 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:58:31 [INFO] Prompt ID: 4811f1f1-efad-4838-99bc-f837bc8864d4
+2023-07-21 14:58:47 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [1, 3, 4, 5, 2],
+        'Name': ['Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple', 'Amazon'],
+        'Industry': ['Healthcare', 'Healthcare', 'Retail and Cloud Computing', 'General merchandisers', 'Electronics industry'],
+        'Revenue (USD millions)': ['469,822', '365,817', '287,597', '292,111', '572,754'],
+        'Revenue growth': ['21.7%', '33.2%', '11.8%', '32.0%', '2.4%'],
+        'Employees': ['1,608,000', '258,000', '154,000', '350,000', '2,300,000'],
+        'Headquarters': ['Bentonville, Arkansas', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Filter the dataframe for companies in Arkansas
+arkansas_companies = df[df['Headquarters'].str.contains('Arkansas')]
+
+# Find the biggest company in Arkansas
+biggest_company = arkansas_companies.loc[arkansas_companies['Revenue (USD millions)'].idxmax()]
+
+biggest_company_details = {
+    'Rank': biggest_company['Rank'],
+    'Name': biggest_company['Name'],
+    'Industry': biggest_company['Industry'],
+    'Revenue (USD millions)': biggest_company['Revenue (USD millions)'],
+    'Revenue growth': biggest_company['Revenue growth'],
+    'Employees': biggest_company['Employees'],
+    'Headquarters': biggest_company['Headquarters']
+}
+
+biggest_company_details
+                        ```
+                    
+2023-07-21 14:58:47 [INFO] 
+Code running:
+```
+data = {'Rank': [1, 3, 4, 5, 2], 'Name': ['Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple', 'Amazon'], 'Industry': ['Healthcare', 'Healthcare', 'Retail and Cloud Computing', 'General merchandisers', 'Electronics industry'], 'Revenue (USD millions)': ['469,822', '365,817', '287,597', '292,111', '572,754'], 'Revenue growth': ['21.7%', '33.2%', '11.8%', '32.0%', '2.4%'], 'Employees': ['1,608,000', '258,000', '154,000', '350,000', '2,300,000'], 'Headquarters': ['Bentonville, Arkansas', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+arkansas_companies = df[df['Headquarters'].str.contains('Arkansas')]
+biggest_company = arkansas_companies.loc[arkansas_companies['Revenue (USD millions)'].idxmax()]
+biggest_company_details = {'Rank': biggest_company['Rank'], 'Name': biggest_company['Name'], 'Industry': biggest_company['Industry'], 'Revenue (USD millions)': biggest_company['Revenue (USD millions)'], 'Revenue growth': biggest_company['Revenue growth'], 'Employees': biggest_company['Employees'], 'Headquarters': biggest_company['Headquarters']}
+biggest_company_details
+```
+2023-07-21 14:58:47 [WARNING] Error executing code (count: 0)
+2023-07-21 14:59:02 [WARNING] Error executing code (count: 1)
+2023-07-21 14:59:15 [WARNING] Error executing code (count: 2)
+2023-07-21 14:59:29 [INFO] Answer: 
+2023-07-21 14:59:29 [INFO] Executed in: 57.92768836021423s
+2023-07-21 14:59:32 [INFO] Question: What's the 5 biggest company in Arkansas ? Also give its details
+2023-07-21 14:59:32 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:59:32 [INFO] Prompt ID: 70c0b5e8-9a27-4a1c-92f1-6172b562fd97
+2023-07-21 14:59:34 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Headquarters'].str.contains('Arkansas')].nlargest(5, 'Rank')
+                        ```
+                    
+2023-07-21 14:59:34 [INFO] 
+Code running:
+```
+df[df['Headquarters'].str.contains('Arkansas')].nlargest(5, 'Rank')
+```
+2023-07-21 14:59:34 [INFO] Answer:     Rank         Name  ...  Employees           Headquarters
+81    82  Tyson Foods  ...    137,000   Springdale, Arkansas
+0      1      Walmart  ...  2,300,000  Bentonville, Arkansas
+
+[2 rows x 7 columns]
+2023-07-21 14:59:34 [INFO] Executed in: 1.7975318431854248s
+2023-07-21 14:59:56 [INFO] Question: What's the 5 biggest company in California ? Also give its details
+2023-07-21 14:59:56 [INFO] Running PandasAI with openai LLM...
+2023-07-21 14:59:56 [INFO] Prompt ID: fee422bd-af13-4000-83f0-880b1b190378
+2023-07-21 15:00:00 [INFO] 
+                        Code generated:
+                        ```
+                        df_california = df[df['Headquarters'].str.contains('California')]
+df_california_sorted = df_california.sort_values(by='Revenue (USD millions)', ascending=False)
+top_5_california = df_california_sorted.head(5)
+top_5_california
+                        ```
+                    
+2023-07-21 15:00:00 [INFO] 
+Code running:
+```
+df_california = df[df['Headquarters'].str.contains('California')]
+df_california_sorted = df_california.sort_values(by='Revenue (USD millions)', ascending=False)
+top_5_california = df_california_sorted.head(5)
+top_5_california
+```
+2023-07-21 15:00:00 [INFO] Answer:     Rank                     Name  ... Employees               Headquarters
+40    41              Wells Fargo  ...   247,848  San Francisco, California
+45    46                    Intel  ...   121,100    Santa Clara, California
+52    53  The Walt Disney Company  ...   171,000        Burbank, California
+58    59                       HP  ...    51,000      Palo Alto, California
+74    75                    Cisco  ...    79,500       San Jose, California
+
+[5 rows x 7 columns]
+2023-07-21 15:00:00 [INFO] Executed in: 4.34489631652832s
+2023-07-21 15:00:27 [INFO] Question: Draw a chart pie chart of the states by employees
+2023-07-21 15:00:27 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:00:27 [INFO] Prompt ID: 0361a9b9-ed9b-4d28-af12-76668d206512
+2023-07-21 15:00:31 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Group the data by Headquarters and count the number of employees in each state
+state_employees = df.groupby('Headquarters')['Employees'].count()
+
+# Plot the pie chart
+plt.pie(state_employees, labels=state_employees.index, autopct='%1.1f%%')
+plt.title('Distribution of Employees by State')
+plt.axis('equal')
+
+# Show the chart
+plt.show()
+                        ```
+                    
+2023-07-21 15:00:31 [INFO] 
+Code running:
+```
+state_employees = df.groupby('Headquarters')['Employees'].count()
+plt.pie(state_employees, labels=state_employees.index, autopct='%1.1f%%')
+plt.title('Distribution of Employees by State')
+plt.axis('equal')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 15:00:32 [INFO] Answer: None
+2023-07-21 15:00:32 [INFO] Executed in: 4.923017501831055s
+2023-07-21 15:02:01 [INFO] Question: Draw a chart pie chart of the states by revenues
+2023-07-21 15:02:01 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:02:01 [INFO] Prompt ID: a52c56c2-626e-4e46-9660-7566bb2a2536
+2023-07-21 15:02:07 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Remove the commas from the Revenue column and convert it to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+
+# Group the data by state and sum the revenues
+state_revenues = df.groupby('State')['Revenue (USD millions)'].sum()
+
+# Plot the pie chart
+plt.figure(figsize=(10, 6))
+state_revenues.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Revenues by State')
+plt.ylabel('')
+plt.show()
+                        ```
+                    
+2023-07-21 15:02:07 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+state_revenues = df.groupby('State')['Revenue (USD millions)'].sum()
+plt.figure(figsize=(10, 6))
+state_revenues.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Revenues by State')
+plt.ylabel('')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 15:02:08 [INFO] Answer: None
+2023-07-21 15:02:08 [INFO] Executed in: 6.534883975982666s
+2023-07-21 15:05:18 [INFO] Question: Draw a chart pie chart of the states by revenues
+2023-07-21 15:05:18 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:05:18 [INFO] Prompt ID: bd3be723-0645-4247-9bf1-bbed9601d066
+2023-07-21 15:05:18 [INFO] Using cached response
+2023-07-21 15:05:18 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+state_revenues = df.groupby('State')['Revenue (USD millions)'].sum()
+plt.figure(figsize=(10, 6))
+state_revenues.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Revenues by State')
+plt.ylabel('')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 15:05:18 [INFO] Answer: None
+2023-07-21 15:05:18 [INFO] Executed in: 0.3685009479522705s
+2023-07-21 15:07:26 [INFO] Question: fig.get_axes()
+2023-07-21 15:07:26 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:07:26 [INFO] Prompt ID: da4a1d43-3f08-43ff-ab46-6262573240b1
+2023-07-21 15:07:34 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+data = {'Rank': [4, 5, 1, 3, 2],
+        'Name': ['UnitedHealth Group', 'Amazon', 'CVS Health', 'Walmart', 'Apple'],
+        'Industry': ['Retail and Cloud Computing', 'Healthcare', 'Healthcare', 'Electronics industry', 'General merchandisers'],
+        'Revenue (USD millions)': ['287,597', '365,817', '572,754', '292,111', '469,822'],
+        'Revenue growth': ['21.7%', '2.4%', '33.2%', '32.0%', '11.8%'],
+        'Employees': ['1,608,000', '2,300,000', '258,000', '350,000', '154,000'],
+        'Headquarters': ['Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Bentonville, Arkansas', 'Minnetonka, Minnesota']}
+
+df = pd.DataFrame(data)
+
+df
+                        ```
+                    
+2023-07-21 15:07:34 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 5, 1, 3, 2], 'Name': ['UnitedHealth Group', 'Amazon', 'CVS Health', 'Walmart', 'Apple'], 'Industry': ['Retail and Cloud Computing', 'Healthcare', 'Healthcare', 'Electronics industry', 'General merchandisers'], 'Revenue (USD millions)': ['287,597', '365,817', '572,754', '292,111', '469,822'], 'Revenue growth': ['21.7%', '2.4%', '33.2%', '32.0%', '11.8%'], 'Employees': ['1,608,000', '2,300,000', '258,000', '350,000', '154,000'], 'Headquarters': ['Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Bentonville, Arkansas', 'Minnetonka, Minnesota']}
+df
+```
+2023-07-21 15:07:34 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-21 15:07:34 [INFO] Executed in: 8.5779709815979s
+2023-07-21 15:08:05 [INFO] Question: make a pie chart of states by total company revenue
+2023-07-21 15:08:05 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:08:05 [INFO] Prompt ID: 00414e1d-b1e0-4dc0-933b-21e82a26114f
+2023-07-21 15:08:20 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create the dataframe
+data = {'Rank': [5, 4, 3, 1, 2],
+        'Name': ['UnitedHealth Group', 'CVS Health', 'Amazon', 'Apple', 'Walmart'],
+        'Industry': ['Electronics industry', 'General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Healthcare'],
+        'Revenue (USD millions)': ['572,754', '292,111', '365,817', '469,822', '287,597'],
+        'Revenue growth': ['21.7%', '32.0%', '2.4%', '33.2%', '11.8%'],
+        'Employees': ['258,000', '1,608,000', '154,000', '2,300,000', '350,000'],
+        'Headquarters': ['Cupertino, California', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Convert the Revenue column to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+
+# Group by state and sum the revenue
+state_revenue = df.groupby('State')['Revenue (USD millions)'].sum()
+
+# Plot the pie chart
+plt.figure(figsize=(10, 6))
+state_revenue.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Total Company Revenue by State')
+plt.ylabel('')
+plt.show()
+                        ```
+                    
+2023-07-21 15:08:20 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 3, 1, 2], 'Name': ['UnitedHealth Group', 'CVS Health', 'Amazon', 'Apple', 'Walmart'], 'Industry': ['Electronics industry', 'General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Healthcare'], 'Revenue (USD millions)': ['572,754', '292,111', '365,817', '469,822', '287,597'], 'Revenue growth': ['21.7%', '32.0%', '2.4%', '33.2%', '11.8%'], 'Employees': ['258,000', '1,608,000', '154,000', '2,300,000', '350,000'], 'Headquarters': ['Cupertino, California', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+state_revenue = df.groupby('State')['Revenue (USD millions)'].sum()
+plt.figure(figsize=(10, 6))
+state_revenue.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Total Company Revenue by State')
+plt.ylabel('')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 15:08:20 [INFO] Answer: None
+2023-07-21 15:08:20 [INFO] Executed in: 14.548551559448242s
+2023-07-21 15:11:16 [INFO] Question: make a pie chart of states by total company revenue
+2023-07-21 15:11:16 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:11:16 [INFO] Prompt ID: 293b1f2f-e1df-4606-8e1f-3050ddc10701
+2023-07-21 15:11:16 [INFO] Using cached response
+2023-07-21 15:11:16 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 3, 1, 2], 'Name': ['UnitedHealth Group', 'CVS Health', 'Amazon', 'Apple', 'Walmart'], 'Industry': ['Electronics industry', 'General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Healthcare'], 'Revenue (USD millions)': ['572,754', '292,111', '365,817', '469,822', '287,597'], 'Revenue growth': ['21.7%', '32.0%', '2.4%', '33.2%', '11.8%'], 'Employees': ['258,000', '1,608,000', '154,000', '2,300,000', '350,000'], 'Headquarters': ['Cupertino, California', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+state_revenue = df.groupby('State')['Revenue (USD millions)'].sum()
+plt.figure(figsize=(10, 6))
+state_revenue.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Total Company Revenue by State')
+plt.ylabel('')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 15:11:17 [INFO] Answer: None
+2023-07-21 15:11:17 [INFO] Executed in: 0.3574025630950928s
+2023-07-21 15:11:52 [INFO] Question: make a pie chart of states by total employees
+2023-07-21 15:11:52 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:11:52 [INFO] Prompt ID: 16ce4a6a-ed96-4dc7-a05d-444dce7d0812
+2023-07-21 15:11:57 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the dataframe
+df = pd.read_csv('data.csv')
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Group by state and sum the employees
+state_employees = df.groupby('State')['Employees'].sum()
+
+# Plot the pie chart
+plt.figure(figsize=(10, 6))
+state_employees.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Total Employees by State')
+plt.ylabel('')
+plt.show()
+                        ```
+                    
+2023-07-21 15:11:57 [INFO] 
+Code running:
+```
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_employees = df.groupby('State')['Employees'].sum()
+plt.figure(figsize=(10, 6))
+state_employees.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Total Employees by State')
+plt.ylabel('')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-21 15:11:57 [WARNING] Error executing code (count: 0)
+2023-07-21 15:12:04 [WARNING] Error executing code (count: 1)
+2023-07-21 15:12:09 [WARNING] Error executing code (count: 2)
+2023-07-21 15:12:14 [INFO] Answer: None
+2023-07-21 15:12:14 [INFO] Executed in: 22.17659902572632s
+2023-07-21 15:13:07 [INFO] Question: What's the biggest state by employees ? 
+2023-07-21 15:13:07 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:13:07 [INFO] Prompt ID: 7c821301-7a39-46c5-b3c0-42eb6f0b23fd
+2023-07-21 15:13:10 [INFO] 
+                        Code generated:
+                        ```
+                        df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+biggest_state = df.groupby('Headquarters')['Employees'].sum().idxmax()
+biggest_state
+                        ```
+                    
+2023-07-21 15:13:10 [INFO] 
+Code running:
+```
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+biggest_state = df.groupby('Headquarters')['Employees'].sum().idxmax()
+biggest_state
+```
+2023-07-21 15:13:10 [INFO] Answer: Bentonville, Arkansas
+2023-07-21 15:13:10 [INFO] Executed in: 2.268141508102417s
+2023-07-21 15:13:25 [INFO] Question: What's the biggest state by employees ? What's the state's revenue by company ?
+2023-07-21 15:13:25 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:13:25 [INFO] Prompt ID: cb83e9e3-6c75-4a45-948d-68d5c9f2711b
+2023-07-21 15:13:39 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [4, 1, 5, 2, 3],
+        'Name': ['Amazon', 'Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple'],
+        'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['469,822', '572,754', '292,111', '287,597', '365,817'],
+        'Revenue growth': ['32.0%', '33.2%', '21.7%', '11.8%', '2.4%'],
+        'Employees': ['258,000', '350,000', '1,608,000', '2,300,000', '154,000'],
+        'Headquarters': ['Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Cupertino, California']}
+
+df = pd.DataFrame(data)
+
+# Clean the data
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Revenue growth'] = df['Revenue growth'].str.rstrip('%').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Find the biggest state by employees
+biggest_state = df.loc[df['Employees'].idxmax(), 'Headquarters'].split(', ')[1]
+
+# Find the state's revenue by company
+state_revenue = df.loc[df['Headquarters'].str.endswith(biggest_state), ['Name', 'Revenue (USD millions)']]
+
+biggest_state, state_revenue
+                        ```
+                    
+2023-07-21 15:13:39 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 1, 5, 2, 3], 'Name': ['Amazon', 'Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple'], 'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['469,822', '572,754', '292,111', '287,597', '365,817'], 'Revenue growth': ['32.0%', '33.2%', '21.7%', '11.8%', '2.4%'], 'Employees': ['258,000', '350,000', '1,608,000', '2,300,000', '154,000'], 'Headquarters': ['Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Cupertino, California']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Revenue growth'] = df['Revenue growth'].str.rstrip('%').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+biggest_state = df.loc[df['Employees'].idxmax(), 'Headquarters'].split(', ')[1]
+state_revenue = df.loc[df['Headquarters'].str.endswith(biggest_state), ['Name', 'Revenue (USD millions)']]
+biggest_state, state_revenue
+```
+2023-07-21 15:13:39 [INFO] Answer: Arkansas            Name  Revenue (USD millions)
+0       Walmart                  572754
+81  Tyson Foods                   47049
+2023-07-21 15:13:39 [INFO] Executed in: 14.438050985336304s
+2023-07-21 15:14:31 [INFO] Question: make and save a pie chart of the states by total company revenue
+2023-07-21 15:14:31 [INFO] Running PandasAI with openai LLM...
+2023-07-21 15:14:31 [INFO] Prompt ID: f0557365-8cb1-449b-a5f4-96301437e91b
+2023-07-21 15:14:39 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the dataframe from a csv file
+df = pd.read_csv('data.csv')
+
+# Remove the commas from the Revenue column and convert it to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+
+# Group the data by state and calculate the total revenue
+state_revenue = df.groupby('State')['Revenue (USD millions)'].sum()
+
+# Create a pie chart of the states by total company revenue
+plt.figure(figsize=(10, 6))
+state_revenue.plot(kind='pie', autopct='%1.1f%%')
+plt.title('States by Total Company Revenue')
+plt.ylabel('')
+plt.legend()
+plt.show()
+
+# Save the pie chart as an image file
+plt.savefig('pie_chart.png')
+                        ```
+                    
+2023-07-21 15:14:39 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+state_revenue = df.groupby('State')['Revenue (USD millions)'].sum()
+plt.figure(figsize=(10, 6))
+state_revenue.plot(kind='pie', autopct='%1.1f%%')
+plt.title('States by Total Company Revenue')
+plt.ylabel('')
+plt.legend()
+plt.show(block=False)
+plt.close('all')
+plt.savefig('pie_chart.png')
+```
+2023-07-21 15:14:40 [INFO] Answer: None
+2023-07-21 15:14:40 [INFO] Executed in: 8.930133581161499s
+2023-07-24 10:13:19 [INFO] Question: Make a dashboard with multiple plots that explain the data, save it and display it
+2023-07-24 10:13:19 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:13:19 [INFO] Prompt ID: ad2502c0-aff6-4bf8-9b1e-9db47dbafa43
+2023-07-24 10:13:34 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the data from a CSV file into a pandas DataFrame
+df = pd.read_csv('data.csv')
+
+# Convert the 'Revenue (USD millions)' column to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+
+# Convert the 'Revenue growth' column to numeric
+df['Revenue growth'] = df['Revenue growth'].str.rstrip('%').astype(float)
+
+# Convert the 'Employees' column to numeric
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Create a bar plot of the top 5 companies by revenue
+top_5_revenue = df.nlargest(5, 'Revenue (USD millions)')
+plt.figure(figsize=(10, 6))
+plt.bar(top_5_revenue['Name'], top_5_revenue['Revenue (USD millions)'])
+plt.xlabel('Company')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Top 5 Companies by Revenue')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('top_5_revenue.png')
+
+# Create a line plot of the revenue growth over time
+df['Year'] = pd.to_datetime(df['Year'])
+plt.figure(figsize=(10, 6))
+plt.plot(df['Year'], df['Revenue growth'])
+plt.xlabel('Year')
+plt.ylabel('Revenue Growth (%)')
+plt.title('Revenue Growth Over Time')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('revenue_growth.png')
+
+# Create a scatter plot of the number of employees vs. revenue
+plt.figure(figsize=(10, 6))
+plt.scatter(df['Employees'], df['Revenue (USD millions)'])
+plt.xlabel('Number of Employees')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Number of Employees vs. Revenue')
+plt.tight_layout()
+plt.savefig('employees_vs_revenue.png')
+
+# Display the plots
+plt.show()
+                        ```
+                    
+2023-07-24 10:13:34 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['Revenue growth'] = df['Revenue growth'].str.rstrip('%').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+top_5_revenue = df.nlargest(5, 'Revenue (USD millions)')
+plt.figure(figsize=(10, 6))
+plt.bar(top_5_revenue['Name'], top_5_revenue['Revenue (USD millions)'])
+plt.xlabel('Company')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Top 5 Companies by Revenue')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('top_5_revenue.png')
+df['Year'] = pd.to_datetime(df['Year'])
+plt.figure(figsize=(10, 6))
+plt.plot(df['Year'], df['Revenue growth'])
+plt.xlabel('Year')
+plt.ylabel('Revenue Growth (%)')
+plt.title('Revenue Growth Over Time')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('revenue_growth.png')
+plt.figure(figsize=(10, 6))
+plt.scatter(df['Employees'], df['Revenue (USD millions)'])
+plt.xlabel('Number of Employees')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Number of Employees vs. Revenue')
+plt.tight_layout()
+plt.savefig('employees_vs_revenue.png')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 10:13:34 [WARNING] Error executing code (count: 0)
+2023-07-24 10:13:50 [WARNING] Error executing code (count: 1)
+2023-07-24 10:14:05 [WARNING] Error executing code (count: 2)
+2023-07-24 10:14:20 [INFO] Answer: None
+2023-07-24 10:14:20 [INFO] Executed in: 60.57528567314148s
+2023-07-24 10:16:43 [INFO] Question: draw a plot of biggest 5 companies by revenue
+2023-07-24 10:16:43 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:16:43 [INFO] Prompt ID: e5b9260a-d625-4eab-b39a-9f8501a13c04
+2023-07-24 10:16:47 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Sort the dataframe by revenue in descending order
+df_sorted = df.sort_values(by='Revenue (USD millions)', ascending=False)
+
+# Select the top 5 companies by revenue
+top_5_companies = df_sorted.head(5)
+
+# Plot the revenue of the top 5 companies
+plt.bar(top_5_companies['Name'], top_5_companies['Revenue (USD millions)'])
+plt.xlabel('Company')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Top 5 Companies by Revenue')
+plt.xticks(rotation=45)
+plt.show()
+                        ```
+                    
+2023-07-24 10:16:47 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by='Revenue (USD millions)', ascending=False)
+top_5_companies = df_sorted.head(5)
+plt.bar(top_5_companies['Name'], top_5_companies['Revenue (USD millions)'])
+plt.xlabel('Company')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Top 5 Companies by Revenue')
+plt.xticks(rotation=45)
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 10:16:48 [INFO] Answer: None
+2023-07-24 10:16:48 [INFO] Executed in: 5.095295429229736s
+2023-07-24 10:22:09 [INFO] Question: draw a bar blot of 5 biggest states by number of headquarters
+2023-07-24 10:22:09 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:22:09 [INFO] Prompt ID: 2fddc5ae-dd86-447e-884f-74b0b02e377c
+2023-07-24 10:22:14 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Sort the dataframe by number of headquarters in descending order
+df_sorted = df.sort_values(by='Headquarters', ascending=False)
+
+# Select the top 5 states with the most headquarters
+top_5_states = df_sorted['Headquarters'].head(5)
+
+# Plot the bar chart
+plt.bar(top_5_states.index, top_5_states.values)
+
+# Add labels and title to the plot
+plt.xlabel('State')
+plt.ylabel('Number of Headquarters')
+plt.title('Top 5 States by Number of Headquarters')
+
+# Show the plot
+plt.show()
+                        ```
+                    
+2023-07-24 10:22:15 [INFO] 
+Code running:
+```
+df_sorted = df.sort_values(by='Headquarters', ascending=False)
+top_5_states = df_sorted['Headquarters'].head(5)
+plt.bar(top_5_states.index, top_5_states.values)
+plt.xlabel('State')
+plt.ylabel('Number of Headquarters')
+plt.title('Top 5 States by Number of Headquarters')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 10:22:15 [INFO] Answer: None
+2023-07-24 10:22:15 [INFO] Executed in: 5.6283111572265625s
+2023-07-24 10:35:29 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:35:29 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:35:29 [INFO] Prompt ID: 785bd398-bf16-41f5-870b-4240f099fc50
+2023-07-24 10:35:31 [INFO] 
+                        Code generated:
+                        ```
+                        df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+                        ```
+                    
+2023-07-24 10:35:31 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:35:31 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:35:31 [INFO] Executed in: 1.825760841369629s
+2023-07-24 10:36:22 [INFO] Question: Draw a pie chart of states by number of headquarters
+2023-07-24 10:36:22 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:36:22 [INFO] Prompt ID: 0a75c93b-e48e-47b5-8463-0d7ff4a45220
+2023-07-24 10:36:36 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create the dataframe
+data = {'Rank': [5, 2, 4, 1, 3],
+        'Name': ['UnitedHealth Group', 'Walmart', 'Amazon', 'CVS Health', 'Apple'],
+        'Industry': ['Electronics industry', 'Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['572,754', '365,817', '292,111', '287,597', '469,822'],
+        'Revenue growth': ['11.8%', '32.0%', '21.7%', '33.2%', '2.4%'],
+        'Employees': ['350,000', '2,300,000', '258,000', '154,000', '1,608,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Extract the state from the headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the number of headquarters by state
+headquarters_count = df['State'].value_counts()
+
+# Plot the pie chart
+plt.figure(figsize=(10, 6))
+headquarters_count.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Number of Headquarters by State')
+plt.ylabel('')
+plt.show()
+                        ```
+                    
+2023-07-24 10:36:36 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 2, 4, 1, 3], 'Name': ['UnitedHealth Group', 'Walmart', 'Amazon', 'CVS Health', 'Apple'], 'Industry': ['Electronics industry', 'Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['572,754', '365,817', '292,111', '287,597', '469,822'], 'Revenue growth': ['11.8%', '32.0%', '21.7%', '33.2%', '2.4%'], 'Employees': ['350,000', '2,300,000', '258,000', '154,000', '1,608,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+headquarters_count = df['State'].value_counts()
+plt.figure(figsize=(10, 6))
+headquarters_count.plot(kind='pie', autopct='%1.1f%%')
+plt.title('Number of Headquarters by State')
+plt.ylabel('')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 10:36:36 [INFO] Answer: None
+2023-07-24 10:36:36 [INFO] Executed in: 14.00989317893982s
+2023-07-24 10:38:46 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:38:46 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:38:46 [INFO] Prompt ID: 7f4d8f86-e04b-42a9-bb65-0be768387718
+2023-07-24 10:38:46 [INFO] Using cached response
+2023-07-24 10:38:46 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:38:46 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:38:46 [INFO] Executed in: 0.059361934661865234s
+2023-07-24 10:39:40 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:39:40 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:39:40 [INFO] Prompt ID: 211fbd37-3883-4c8d-8f9d-3b85f333a51c
+2023-07-24 10:39:40 [INFO] Using cached response
+2023-07-24 10:39:40 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:39:40 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:39:40 [INFO] Executed in: 0.04722261428833008s
+2023-07-24 10:41:06 [INFO] Question: Fais moi un tableau en markdown avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:41:06 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:41:06 [INFO] Prompt ID: 40ad9fb7-6c0f-4c7f-8066-db32a665df60
+2023-07-24 10:41:40 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:41:40 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:41:40 [INFO] Prompt ID: ef33a18d-523e-498b-bb52-4f7b0463d7bb
+2023-07-24 10:41:40 [INFO] Using cached response
+2023-07-24 10:41:40 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:41:40 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:41:40 [INFO] Executed in: 0.03078484535217285s
+2023-07-24 10:47:33 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:47:33 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:47:33 [INFO] Prompt ID: 745fb63c-e5ea-493f-aca4-66788b154ab3
+2023-07-24 10:47:33 [INFO] Using cached response
+2023-07-24 10:47:33 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:47:33 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:47:33 [INFO] Executed in: 0.029953956604003906s
+2023-07-24 10:49:26 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:49:26 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:49:26 [INFO] Prompt ID: 9c185543-5fa3-4429-81b9-b14f5cf07031
+2023-07-24 10:49:26 [INFO] Using cached response
+2023-07-24 10:49:26 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:49:26 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:49:26 [INFO] Executed in: 0.03154492378234863s
+2023-07-24 10:50:24 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:50:24 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:50:24 [INFO] Prompt ID: b0763d25-a0a9-482b-ab2f-2a2f849835a8
+2023-07-24 10:50:24 [INFO] Using cached response
+2023-07-24 10:50:24 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:50:24 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:50:24 [INFO] Executed in: 0.05351710319519043s
+2023-07-24 10:51:36 [INFO] Question: How many comapnies are in Arkansas
+2023-07-24 10:51:36 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:51:36 [INFO] Prompt ID: 5333e805-4e2f-4248-87bf-1137aae2711f
+2023-07-24 10:51:37 [INFO] Question: How many comapnies are in Arkansas
+2023-07-24 10:51:37 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:51:37 [INFO] Prompt ID: 0abecc78-7af9-4f6f-9649-daf4d6d10db6
+2023-07-24 10:51:39 [INFO] 
+                        Code generated:
+                        ```
+                        count = df[df['Headquarters'].str.contains('Arkansas')].shape[0]
+count
+                        ```
+                    
+2023-07-24 10:51:39 [INFO] 
+Code running:
+```
+count = df[df['Headquarters'].str.contains('Arkansas')].shape[0]
+count
+```
+2023-07-24 10:51:39 [INFO] Answer: 2
+2023-07-24 10:51:39 [INFO] Executed in: 2.6003284454345703s
+2023-07-24 10:51:40 [INFO] 
+                        Code generated:
+                        ```
+                        count = df[df['Headquarters'].str.contains('Arkansas')].shape[0]
+count
+                        ```
+                    
+2023-07-24 10:51:40 [INFO] 
+Code running:
+```
+count = df[df['Headquarters'].str.contains('Arkansas')].shape[0]
+count
+```
+2023-07-24 10:51:40 [INFO] Answer: 2
+2023-07-24 10:51:40 [INFO] Executed in: 2.559994697570801s
+2023-07-24 10:52:50 [INFO] Question: How many comapnies are in Arkansas
+2023-07-24 10:52:50 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:52:50 [INFO] Prompt ID: 2ec87226-fd70-40d9-a3bc-6b66b14b4b93
+2023-07-24 10:52:50 [INFO] Using cached response
+2023-07-24 10:52:50 [INFO] 
+Code running:
+```
+count = df[df['Headquarters'].str.contains('Arkansas')].shape[0]
+count
+```
+2023-07-24 10:52:50 [INFO] Answer: 2
+2023-07-24 10:52:50 [INFO] Executed in: 0.013962984085083008s
+2023-07-24 10:54:42 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:54:42 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:54:42 [INFO] Prompt ID: f8e4f9da-8618-43cd-8aa1-b008716f0dbc
+2023-07-24 10:54:42 [INFO] Using cached response
+2023-07-24 10:54:42 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:54:42 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:54:42 [INFO] Executed in: 0.041176795959472656s
+2023-07-24 10:56:42 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:56:42 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:56:42 [INFO] Prompt ID: 5aad0df4-4551-4574-abee-f6140d751423
+2023-07-24 10:56:42 [INFO] Using cached response
+2023-07-24 10:56:42 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:56:42 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:56:42 [INFO] Executed in: 0.029795169830322266s
+2023-07-24 10:59:16 [INFO] Question: Fais moi un tableau avec les les états, les plus grosses entreprises et leurs revenus
+2023-07-24 10:59:16 [INFO] Running PandasAI with openai LLM...
+2023-07-24 10:59:16 [INFO] Prompt ID: 35b4cbbe-4b29-4129-be4e-d4178228baea
+2023-07-24 10:59:16 [INFO] Using cached response
+2023-07-24 10:59:16 [INFO] 
+Code running:
+```
+df[['Headquarters', 'Name', 'Revenue (USD millions)']]
+```
+2023-07-24 10:59:16 [INFO] Answer:                       Headquarters                 Name Revenue (USD millions)
+0            Bentonville, Arkansas              Walmart                572,754
+1              Seattle, Washington               Amazon                469,822
+2            Cupertino, California                Apple                365,817
+3         Woonsocket, Rhode Island           CVS Health                292,111
+4            Minnetonka, Minnesota   UnitedHealth Group                287,597
+..                             ...                  ...                    ...
+95                Reston, Virginia     General Dynamics                 38,469
+96  Inver Grove Heights, Minnesota                  CHS                 38,448
+97              San Antonio, Texas                 USAA                 37,470
+98            Milwaukee, Wisconsin  Northwestern Mutual                 36,751
+99       Charlotte, North Carolina                Nucor                 36,484
+
+[100 rows x 3 columns]
+2023-07-24 10:59:16 [INFO] Executed in: 0.12402558326721191s
+2023-07-24 11:02:41 [INFO] Question: How many comapnies per state ? 
+2023-07-24 11:02:41 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:02:41 [INFO] Prompt ID: 88b2345f-8876-4e48-a52b-57ca6a739d3d
+2023-07-24 11:02:44 [INFO] 
+                        Code generated:
+                        ```
+                        df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_per_state = df['State'].value_counts()
+companies_per_state
+                        ```
+                    
+2023-07-24 11:02:44 [INFO] 
+Code running:
+```
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_per_state = df['State'].value_counts()
+companies_per_state
+```
+2023-07-24 11:02:44 [INFO] Answer: New York          15
+Texas             14
+California         9
+Illinois           9
+Massachusetts      6
+Ohio               6
+Minnesota          4
+North Carolina     3
+Pennsylvania       3
+Georgia            3
+New Jersey         3
+Michigan           3
+Washington         3
+Virginia           2
+Tennessee          2
+Arkansas           2
+Connecticut        2
+D.C.               1
+Missouri           1
+Indiana            1
+Kentucky           1
+Nebraska           1
+Idaho              1
+Maryland           1
+Rhode Island       1
+Florida            1
+Oregon             1
+Wisconsin          1
+Name: State, dtype: int64
+2023-07-24 11:02:44 [INFO] Executed in: 2.445308208465576s
+2023-07-24 11:12:05 [INFO] Question: How many comapnies per state ?
+2023-07-24 11:12:05 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:12:05 [INFO] Prompt ID: 99f0c12b-3879-4cb4-b2c9-2f82a284fd5d
+2023-07-24 11:12:08 [INFO] 
+                        Code generated:
+                        ```
+                        df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_per_state = df['State'].value_counts()
+companies_per_state
+                        ```
+                    
+2023-07-24 11:12:08 [INFO] 
+Code running:
+```
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_per_state = df['State'].value_counts()
+companies_per_state
+```
+2023-07-24 11:12:08 [INFO] Answer: New York          15
+Texas             14
+California         9
+Illinois           9
+Massachusetts      6
+Ohio               6
+Minnesota          4
+North Carolina     3
+Pennsylvania       3
+Georgia            3
+New Jersey         3
+Michigan           3
+Washington         3
+Virginia           2
+Tennessee          2
+Arkansas           2
+Connecticut        2
+D.C.               1
+Missouri           1
+Indiana            1
+Kentucky           1
+Nebraska           1
+Idaho              1
+Maryland           1
+Rhode Island       1
+Florida            1
+Oregon             1
+Wisconsin          1
+Name: State, dtype: int64
+2023-07-24 11:12:08 [INFO] Executed in: 2.696575403213501s
+2023-07-24 11:13:04 [INFO] Question: How many comapnies per state ? Give the 5 biggest company with the total revenue
+2023-07-24 11:13:04 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:13:04 [INFO] Prompt ID: 90e653d1-56e0-4c18-9fd1-82fc0d50f535
+2023-07-24 11:13:16 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [3, 1, 4, 2, 5],
+        'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'],
+        'Industry': ['Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Healthcare'],
+        'Revenue (USD millions)': ['469,822', '365,817', '292,111', '572,754', '287,597'],
+        'Revenue growth': ['33.2%', '32.0%', '2.4%', '11.8%', '21.7%'],
+        'Employees': ['154,000', '258,000', '1,608,000', '2,300,000', '350,000'],
+        'Headquarters': ['Cupertino, California', 'Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the number of companies per state
+companies_per_state = df['State'].value_counts()
+
+# Get the 5 biggest companies with the total revenue
+top_5_revenue = df.groupby('Name')['Revenue (USD millions)'].sum().nlargest(5)
+
+companies_per_state, top_5_revenue
+                        ```
+                    
+2023-07-24 11:13:16 [INFO] 
+Code running:
+```
+data = {'Rank': [3, 1, 4, 2, 5], 'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'], 'Industry': ['Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Healthcare'], 'Revenue (USD millions)': ['469,822', '365,817', '292,111', '572,754', '287,597'], 'Revenue growth': ['33.2%', '32.0%', '2.4%', '11.8%', '21.7%'], 'Employees': ['154,000', '258,000', '1,608,000', '2,300,000', '350,000'], 'Headquarters': ['Cupertino, California', 'Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+companies_per_state = df['State'].value_counts()
+top_5_revenue = df.groupby('Name')['Revenue (USD millions)'].sum().nlargest(5)
+companies_per_state, top_5_revenue
+```
+2023-07-24 11:13:16 [WARNING] Error executing code (count: 0)
+2023-07-24 11:13:29 [WARNING] Error executing code (count: 1)
+2023-07-24 11:13:42 [WARNING] Error executing code (count: 2)
+2023-07-24 11:13:56 [INFO] Answer: 
+2023-07-24 11:13:56 [INFO] Executed in: 51.456777811050415s
+2023-07-24 11:16:27 [INFO] Question: How many comapnies per state ? Give the 5 biggest company with the total revenue
+2023-07-24 11:16:27 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:16:27 [INFO] Prompt ID: a4a1795c-e062-4bb1-8f50-f6156b3064e6
+2023-07-24 11:16:27 [INFO] Using cached response
+2023-07-24 11:16:27 [INFO] 
+Code running:
+```
+data = {'Rank': [3, 1, 4, 2, 5], 'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'], 'Industry': ['Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Healthcare'], 'Revenue (USD millions)': ['469,822', '365,817', '292,111', '572,754', '287,597'], 'Revenue growth': ['33.2%', '32.0%', '2.4%', '11.8%', '21.7%'], 'Employees': ['154,000', '258,000', '1,608,000', '2,300,000', '350,000'], 'Headquarters': ['Cupertino, California', 'Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+companies_per_state = df['State'].value_counts()
+top_5_revenue = df.groupby('Name')['Revenue (USD millions)'].sum().nlargest(5)
+companies_per_state, top_5_revenue
+```
+2023-07-24 11:16:27 [WARNING] Error executing code (count: 0)
+2023-07-24 11:16:43 [WARNING] Error executing code (count: 1)
+2023-07-24 11:16:43 [INFO] Question: How many comapnies per state ? 
+2023-07-24 11:16:43 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:16:43 [INFO] Prompt ID: 91ee561d-10c8-44d5-8d8c-3b969dabdc03
+2023-07-24 11:16:43 [INFO] Using cached response
+2023-07-24 11:16:43 [INFO] 
+Code running:
+```
+df['State'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_per_state = df['State'].value_counts()
+companies_per_state
+```
+2023-07-24 11:16:43 [INFO] Answer: New York          15
+Texas             14
+California         9
+Illinois           9
+Massachusetts      6
+Ohio               6
+Minnesota          4
+North Carolina     3
+Pennsylvania       3
+Georgia            3
+New Jersey         3
+Michigan           3
+Washington         3
+Virginia           2
+Tennessee          2
+Arkansas           2
+Connecticut        2
+D.C.               1
+Missouri           1
+Indiana            1
+Kentucky           1
+Nebraska           1
+Idaho              1
+Maryland           1
+Rhode Island       1
+Florida            1
+Oregon             1
+Wisconsin          1
+Name: State, dtype: int64
+2023-07-24 11:16:43 [INFO] Executed in: 0.01703190803527832s
+2023-07-24 11:16:56 [WARNING] Error executing code (count: 2)
+2023-07-24 11:17:06 [INFO] Question: What's the biggest company in Texas ?
+2023-07-24 11:17:06 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:17:06 [INFO] Prompt ID: b1a90e2b-3c70-41cb-a468-5522450a6dc4
+2023-07-24 11:17:08 [INFO] Question: What's the biggest company in Texas ?
+2023-07-24 11:17:08 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:17:08 [INFO] Prompt ID: 56cd9960-db64-423a-9f6d-3d0b78f82269
+2023-07-24 11:17:08 [INFO] Answer: 
+2023-07-24 11:17:08 [INFO] Executed in: 40.97590255737305s
+2023-07-24 11:17:09 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Headquarters'].str.contains('Texas')].sort_values(by='Revenue (USD millions)', ascending=False).head(1)['Name'].values[0]
+                        ```
+                    
+2023-07-24 11:17:09 [INFO] 
+Code running:
+```
+df[df['Headquarters'].str.contains('Texas')].sort_values(by='Revenue (USD millions)', ascending=False).head(1)['Name'].values[0]
+```
+2023-07-24 11:17:09 [INFO] Answer: Energy Transfer Partners
+2023-07-24 11:17:09 [INFO] Executed in: 2.439866542816162s
+2023-07-24 11:17:10 [INFO] 
+                        Code generated:
+                        ```
+                        df[df['Headquarters'].str.contains('Texas')].sort_values(by='Revenue (USD millions)', ascending=False).head(1)['Name'].values[0]
+                        ```
+                    
+2023-07-24 11:17:10 [INFO] 
+Code running:
+```
+df[df['Headquarters'].str.contains('Texas')].sort_values(by='Revenue (USD millions)', ascending=False).head(1)['Name'].values[0]
+```
+2023-07-24 11:17:10 [INFO] Answer: Energy Transfer Partners
+2023-07-24 11:17:10 [INFO] Executed in: 2.0970633029937744s
+2023-07-24 11:17:31 [INFO] Question: How many people does it employ, and what is its revenue ?
+2023-07-24 11:17:31 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:17:31 [INFO] Prompt ID: 9145157e-f445-4621-b6bb-e797ab3a7336
+2023-07-24 11:17:45 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [5, 4, 3, 1, 2],
+        'Name': ['Walmart', 'Apple', 'Amazon', 'CVS Health', 'UnitedHealth Group'],
+        'Industry': ['Electronics industry', 'General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Healthcare'],
+        'Revenue (USD millions)': ['365,817', '572,754', '287,597', '292,111', '469,822'],
+        'Revenue growth': ['32.0%', '21.7%', '2.4%', '11.8%', '33.2%'],
+        'Employees': ['350,000', '258,000', '154,000', '2,300,000', '1,608,000'],
+        'Headquarters': ['Minnetonka, Minnesota', 'Seattle, Washington', 'Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California']}
+
+df = pd.DataFrame(data)
+
+# Clean the data
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Calculate the total number of employees and revenue
+total_employees = df['Employees'].sum()
+total_revenue = df['Revenue (USD millions)'].sum()
+
+total_employees, total_revenue
+                        ```
+                    
+2023-07-24 11:17:45 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 3, 1, 2], 'Name': ['Walmart', 'Apple', 'Amazon', 'CVS Health', 'UnitedHealth Group'], 'Industry': ['Electronics industry', 'General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Healthcare'], 'Revenue (USD millions)': ['365,817', '572,754', '287,597', '292,111', '469,822'], 'Revenue growth': ['32.0%', '21.7%', '2.4%', '11.8%', '33.2%'], 'Employees': ['350,000', '258,000', '154,000', '2,300,000', '1,608,000'], 'Headquarters': ['Minnetonka, Minnesota', 'Seattle, Washington', 'Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+total_employees = df['Employees'].sum()
+total_revenue = df['Revenue (USD millions)'].sum()
+total_employees, total_revenue
+```
+2023-07-24 11:17:45 [INFO] Answer: 16557706 10409753
+2023-07-24 11:17:45 [INFO] Executed in: 13.512086868286133s
+2023-07-24 11:19:39 [INFO] Question: Make a barplot of the biggest 5 states by number of company HQ
+2023-07-24 11:19:39 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:19:39 [INFO] Prompt ID: 182a7970-4ab5-43f9-ae39-c2e4fba5d8c5
+2023-07-24 11:19:52 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create the dataframe
+data = {'Rank': [5, 4, 2, 3, 1],
+        'Name': ['Amazon', 'Apple', 'UnitedHealth Group', 'CVS Health', 'Walmart'],
+        'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['469,822', '287,597', '572,754', '292,111', '365,817'],
+        'Revenue growth': ['2.4%', '33.2%', '32.0%', '11.8%', '21.7%'],
+        'Employees': ['1,608,000', '154,000', '2,300,000', '350,000', '258,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the number of companies in each state
+state_counts = df['State'].value_counts().head(5)
+
+# Plot the barplot
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show()
+                        ```
+                    
+2023-07-24 11:19:52 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 2, 3, 1], 'Name': ['Amazon', 'Apple', 'UnitedHealth Group', 'CVS Health', 'Walmart'], 'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['469,822', '287,597', '572,754', '292,111', '365,817'], 'Revenue growth': ['2.4%', '33.2%', '32.0%', '11.8%', '21.7%'], 'Employees': ['1,608,000', '154,000', '2,300,000', '350,000', '258,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_counts = df['State'].value_counts().head(5)
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:19:52 [INFO] Answer: None
+2023-07-24 11:19:52 [INFO] Executed in: 13.439910411834717s
+2023-07-24 11:22:40 [INFO] Question: Make a barplot of the biggest 5 states by number of company HQ
+2023-07-24 11:22:40 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:22:40 [INFO] Prompt ID: 3819faf1-98d1-49e9-b2e3-4b7606beb0ec
+2023-07-24 11:22:40 [INFO] Using cached response
+2023-07-24 11:22:41 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 2, 3, 1], 'Name': ['Amazon', 'Apple', 'UnitedHealth Group', 'CVS Health', 'Walmart'], 'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['469,822', '287,597', '572,754', '292,111', '365,817'], 'Revenue growth': ['2.4%', '33.2%', '32.0%', '11.8%', '21.7%'], 'Employees': ['1,608,000', '154,000', '2,300,000', '350,000', '258,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_counts = df['State'].value_counts().head(5)
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:22:41 [INFO] Answer: None
+2023-07-24 11:22:41 [INFO] Executed in: 0.7754204273223877s
+2023-07-24 11:25:13 [INFO] Question: Make a barplot of the biggest 5 states by number of company HQ
+2023-07-24 11:25:13 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:25:13 [INFO] Prompt ID: b29b0ace-4b77-41f5-9d73-e2d9eb0ebc76
+2023-07-24 11:25:13 [INFO] Using cached response
+2023-07-24 11:25:13 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 2, 3, 1], 'Name': ['Amazon', 'Apple', 'UnitedHealth Group', 'CVS Health', 'Walmart'], 'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['469,822', '287,597', '572,754', '292,111', '365,817'], 'Revenue growth': ['2.4%', '33.2%', '32.0%', '11.8%', '21.7%'], 'Employees': ['1,608,000', '154,000', '2,300,000', '350,000', '258,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Bentonville, Arkansas', 'Cupertino, California', 'Minnetonka, Minnesota', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_counts = df['State'].value_counts().head(5)
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:25:13 [INFO] Answer: None
+2023-07-24 11:25:13 [INFO] Executed in: 0.19257616996765137s
+2023-07-24 11:25:50 [INFO] Question: how many companies in Texas ? 
+2023-07-24 11:25:50 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:25:50 [INFO] Prompt ID: f2b388d9-0b36-4606-8ac9-c6e07727680e
+2023-07-24 11:25:56 [INFO] 
+                        Code generated:
+                        ```
+                        df['Headquarters'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_in_texas = df[df['Headquarters'] == 'Texas']
+num_companies_in_texas = len(companies_in_texas)
+num_companies_in_texas
+                        ```
+                    
+2023-07-24 11:25:56 [INFO] 
+Code running:
+```
+df['Headquarters'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_in_texas = df[df['Headquarters'] == 'Texas']
+num_companies_in_texas = len(companies_in_texas)
+num_companies_in_texas
+```
+2023-07-24 11:25:56 [INFO] Answer: 14
+2023-07-24 11:25:56 [INFO] Executed in: 6.078685522079468s
+2023-07-24 11:26:32 [INFO] Question: how many companies in Texas ? 
+2023-07-24 11:26:32 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:26:32 [INFO] Prompt ID: 94af334a-2d7d-4735-82f5-16ce78ae2ec4
+2023-07-24 11:26:32 [INFO] Using cached response
+2023-07-24 11:26:32 [INFO] 
+Code running:
+```
+df['Headquarters'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+companies_in_texas = df[df['Headquarters'] == 'Texas']
+num_companies_in_texas = len(companies_in_texas)
+num_companies_in_texas
+```
+2023-07-24 11:26:32 [INFO] Answer: 14
+2023-07-24 11:26:32 [INFO] Executed in: 0.07053208351135254s
+2023-07-24 11:27:08 [INFO] Question: how many companies in Caiifornia? 
+2023-07-24 11:27:08 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:27:08 [INFO] Prompt ID: 969ffa58-ca40-4ee6-beae-2553efb3de66
+2023-07-24 11:27:09 [INFO] 
+                        Code generated:
+                        ```
+                        count = df[df['Headquarters'].str.contains('California')].shape[0]
+count
+                        ```
+                    
+2023-07-24 11:27:09 [INFO] 
+Code running:
+```
+count = df[df['Headquarters'].str.contains('California')].shape[0]
+count
+```
+2023-07-24 11:27:09 [INFO] Answer: 9
+2023-07-24 11:27:09 [INFO] Executed in: 1.7430028915405273s
+2023-07-24 11:28:42 [INFO] Question: how many companies in Caiifornia? 
+2023-07-24 11:28:42 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:28:42 [INFO] Prompt ID: 4e4bde59-c479-4bdd-9492-269c71b5bfce
+2023-07-24 11:28:42 [INFO] Using cached response
+2023-07-24 11:28:42 [INFO] 
+Code running:
+```
+count = df[df['Headquarters'].str.contains('California')].shape[0]
+count
+```
+2023-07-24 11:28:42 [INFO] Answer: 9
+2023-07-24 11:28:42 [INFO] Executed in: 0.009972810745239258s
+2023-07-24 11:28:59 [INFO] Question: how many rows
+2023-07-24 11:28:59 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:28:59 [INFO] Prompt ID: 79d9143c-8791-4055-b7a7-dae8ef14fcf3
+2023-07-24 11:29:01 [INFO] 
+                        Code generated:
+                        ```
+                        rows = df.shape[0]
+rows
+                        ```
+                    
+2023-07-24 11:29:01 [INFO] 
+Code running:
+```
+rows = df.shape[0]
+rows
+```
+2023-07-24 11:29:01 [INFO] Answer: 100
+2023-07-24 11:29:01 [INFO] Executed in: 1.754204273223877s
+2023-07-24 11:30:20 [INFO] Question: How many rows ?
+2023-07-24 11:30:20 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:30:20 [INFO] Prompt ID: f5323a94-0657-4daa-8f65-4e17ffbf668a
+2023-07-24 11:30:21 [INFO] 
+                        Code generated:
+                        ```
+                        rows = df.shape[0]
+rows
+                        ```
+                    
+2023-07-24 11:30:22 [INFO] 
+Code running:
+```
+rows = df.shape[0]
+rows
+```
+2023-07-24 11:30:22 [INFO] Answer: 100
+2023-07-24 11:30:22 [INFO] Executed in: 1.375988483428955s
+2023-07-24 11:33:24 [INFO] Question: How many rows
+2023-07-24 11:33:24 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:33:24 [INFO] Prompt ID: 6703249f-c225-4b04-a854-48cf74947902
+2023-07-24 11:33:25 [INFO] 
+                        Code generated:
+                        ```
+                        rows = df.shape[0]
+rows
+                        ```
+                    
+2023-07-24 11:33:25 [INFO] 
+Code running:
+```
+rows = df.shape[0]
+rows
+```
+2023-07-24 11:33:25 [INFO] Answer: 100
+2023-07-24 11:33:25 [INFO] Executed in: 1.7129535675048828s
+2023-07-24 11:34:06 [INFO] Question: Draw a table of the 10 biggest companies in Texas, with industry, revenue and number of employees
+2023-07-24 11:34:06 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:34:06 [INFO] Prompt ID: 518b12ea-5ffe-4646-815d-17c495bba258
+2023-07-24 11:34:16 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create a dataframe
+data = {'Rank': [2, 4, 1, 3, 5],
+        'Name': ['UnitedHealth Group', 'CVS Health', 'Walmart', 'Amazon', 'Apple'],
+        'Industry': ['General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry', 'Healthcare'],
+        'Revenue (USD millions)': ['292,111', '572,754', '287,597', '469,822', '365,817'],
+        'Revenue growth': ['32.0%', '2.4%', '11.8%', '21.7%', '33.2%'],
+        'Employees': ['350,000', '1,608,000', '2,300,000', '154,000', '258,000'],
+        'Headquarters': ['Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Cupertino, California']}
+
+df = pd.DataFrame(data)
+
+# Filter the companies in Texas
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+
+# Sort the dataframe by revenue in descending order
+df_texas_sorted = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+
+# Select the top 10 companies
+df_top_10 = df_texas_sorted.head(10)
+
+# Display the table
+print(df_top_10[['Name', 'Industry', 'Revenue (USD millions)', 'Employees']])
+                        ```
+                    
+2023-07-24 11:34:16 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 1, 3, 5], 'Name': ['UnitedHealth Group', 'CVS Health', 'Walmart', 'Amazon', 'Apple'], 'Industry': ['General merchandisers', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry', 'Healthcare'], 'Revenue (USD millions)': ['292,111', '572,754', '287,597', '469,822', '365,817'], 'Revenue growth': ['32.0%', '2.4%', '11.8%', '21.7%', '33.2%'], 'Employees': ['350,000', '1,608,000', '2,300,000', '154,000', '258,000'], 'Headquarters': ['Seattle, Washington', 'Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Cupertino, California']}
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+df_texas_sorted = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+df_top_10 = df_texas_sorted.head(10)
+print(df_top_10[['Name', 'Industry', 'Revenue (USD millions)', 'Employees']])
+```
+2023-07-24 11:34:16 [INFO] Answer:                             Name  ... Employees
+53      Energy Transfer Partners  ...    12,558
+64                         Tesla  ...    99,290
+69                         Sysco  ...    57,710
+77                ConocoPhillips  ...     9,900
+89  Plains All American Pipeline  ...     4,100
+90           Enterprise Products  ...     6,911
+92            Oracle Corporation  ...   132,000
+97                          USAA  ...    37,335
+5                    Exxon Mobil  ...    63,000
+8           McKesson Corporation  ...    67,500
+
+[10 rows x 4 columns]
+2023-07-24 11:34:16 [INFO] Executed in: 10.438122987747192s
+2023-07-24 11:35:01 [INFO] Question: Draw a table of the 10 biggest companies in Texas, with industry, revenue and number of employees and city (sort by revenue desc)
+2023-07-24 11:35:01 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:35:01 [INFO] Prompt ID: 0f82fc64-3b84-4d91-af12-a33809b533a8
+2023-07-24 11:35:15 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 5, 3, 1, 4],
+        'Name': ['UnitedHealth Group', 'Walmart', 'Apple', 'Amazon', 'CVS Health'],
+        'Industry': ['Electronics industry', 'Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['292,111', '365,817', '572,754', '469,822', '287,597'],
+        'Revenue growth': ['32.0%', '33.2%', '21.7%', '11.8%', '2.4%'],
+        'Employees': ['258,000', '154,000', '350,000', '2,300,000', '1,608,000'],
+        'Headquarters': ['Cupertino, California', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Seattle, Washington', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Convert revenue and employees columns to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Filter companies in Texas
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+
+# Sort by revenue in descending order
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+
+# Select top 10 companies
+df_texas = df_texas.head(10)
+
+# Display the table
+df_texas[['Name', 'Industry', 'Revenue (USD millions)', 'Employees', 'Headquarters']]
+                        ```
+                    
+2023-07-24 11:35:15 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 5, 3, 1, 4], 'Name': ['UnitedHealth Group', 'Walmart', 'Apple', 'Amazon', 'CVS Health'], 'Industry': ['Electronics industry', 'Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['292,111', '365,817', '572,754', '469,822', '287,597'], 'Revenue growth': ['32.0%', '33.2%', '21.7%', '11.8%', '2.4%'], 'Employees': ['258,000', '154,000', '350,000', '2,300,000', '1,608,000'], 'Headquarters': ['Cupertino, California', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Seattle, Washington', 'Woonsocket, Rhode Island']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+df_texas = df_texas.head(10)
+df_texas[['Name', 'Industry', 'Revenue (USD millions)', 'Employees', 'Headquarters']]
+```
+2023-07-24 11:35:16 [INFO] Answer:                         Name  ...        Headquarters
+5                Exxon Mobil  ...       Spring, Texas
+8       McKesson Corporation  ...       Irving, Texas
+13                      AT&T  ...       Dallas, Texas
+28               Phillips 66  ...      Houston, Texas
+29             Valero Energy  ...  San Antonio, Texas
+30         Dell Technologies  ...   Round Rock, Texas
+53  Energy Transfer Partners  ...       Dallas, Texas
+64                     Tesla  ...       Austin, Texas
+69                     Sysco  ...      Houston, Texas
+77            ConocoPhillips  ...      Houston, Texas
+
+[10 rows x 5 columns]
+2023-07-24 11:35:16 [INFO] Executed in: 14.536858797073364s
+2023-07-24 11:36:51 [INFO] Question: Draw a table of the 10 biggest companies in Texas, with industry, revenue and number of employees and city (group by indeustry and sort by revenue desc )
+2023-07-24 11:36:51 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:36:51 [INFO] Prompt ID: 78d2081a-2fc2-456e-9edf-a3e3cd613735
+2023-07-24 11:37:06 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 4, 5, 1, 3],
+        'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'],
+        'Industry': ['Healthcare', 'Electronics industry', 'Healthcare', 'General merchandisers', 'Retail and Cloud Computing'],
+        'Revenue (USD millions)': ['292,111', '572,754', '365,817', '287,597', '469,822'],
+        'Revenue growth': ['2.4%', '32.0%', '11.8%', '33.2%', '21.7%'],
+        'Employees': ['154,000', '2,300,000', '1,608,000', '350,000', '258,000'],
+        'Headquarters': ['Bentonville, Arkansas', 'Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Convert revenue and employees columns to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Filter for companies in Texas
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+
+# Sort by revenue in descending order
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+
+# Select the top 10 companies
+df_top_10 = df_texas.head(10)
+
+# Display the table
+df_top_10[['Name', 'Industry', 'Revenue (USD millions)', 'Employees', 'Headquarters']]
+                        ```
+                    
+2023-07-24 11:37:06 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 5, 1, 3], 'Name': ['Apple', 'CVS Health', 'Walmart', 'UnitedHealth Group', 'Amazon'], 'Industry': ['Healthcare', 'Electronics industry', 'Healthcare', 'General merchandisers', 'Retail and Cloud Computing'], 'Revenue (USD millions)': ['292,111', '572,754', '365,817', '287,597', '469,822'], 'Revenue growth': ['2.4%', '32.0%', '11.8%', '33.2%', '21.7%'], 'Employees': ['154,000', '2,300,000', '1,608,000', '350,000', '258,000'], 'Headquarters': ['Bentonville, Arkansas', 'Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+df_top_10 = df_texas.head(10)
+df_top_10[['Name', 'Industry', 'Revenue (USD millions)', 'Employees', 'Headquarters']]
+```
+2023-07-24 11:37:06 [INFO] Answer:                         Name  ...        Headquarters
+5                Exxon Mobil  ...       Spring, Texas
+8       McKesson Corporation  ...       Irving, Texas
+13                      AT&T  ...       Dallas, Texas
+28               Phillips 66  ...      Houston, Texas
+29             Valero Energy  ...  San Antonio, Texas
+30         Dell Technologies  ...   Round Rock, Texas
+53  Energy Transfer Partners  ...       Dallas, Texas
+64                     Tesla  ...       Austin, Texas
+69                     Sysco  ...      Houston, Texas
+77            ConocoPhillips  ...      Houston, Texas
+
+[10 rows x 5 columns]
+2023-07-24 11:37:06 [INFO] Executed in: 14.592123746871948s
+2023-07-24 11:37:41 [INFO] Question: Draw a table of the 10 biggest companies in Texas, with industry, revenue and number of employees and city (group by industry)
+2023-07-24 11:37:41 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:37:41 [INFO] Prompt ID: 1c49fd62-c57e-4608-ae06-02f5863e4762
+2023-07-24 11:37:58 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 4, 1, 3, 5],
+        'Name': ['UnitedHealth Group', 'Apple', 'CVS Health', 'Amazon', 'Walmart'],
+        'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry'],
+        'Revenue (USD millions)': ['365,817', '292,111', '572,754', '287,597', '469,822'],
+        'Revenue growth': ['33.2%', '2.4%', '11.8%', '32.0%', '21.7%'],
+        'Employees': ['258,000', '154,000', '1,608,000', '350,000', '2,300,000'],
+        'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Convert revenue and employees columns to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Filter companies in Texas
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+
+# Sort by revenue in descending order
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+
+# Get the top 10 companies
+df_top_10 = df_texas.head(10)
+
+# Group by industry and aggregate revenue and employees
+df_grouped = df_top_10.groupby('Industry').agg({'Revenue (USD millions)': 'sum', 'Employees': 'sum'})
+
+# Rename columns
+df_grouped = df_grouped.rename(columns={'Revenue (USD millions)': 'Total Revenue', 'Employees': 'Total Employees'})
+
+# Print the table
+print(df_grouped)
+                        ```
+                    
+2023-07-24 11:37:58 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 1, 3, 5], 'Name': ['UnitedHealth Group', 'Apple', 'CVS Health', 'Amazon', 'Walmart'], 'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry'], 'Revenue (USD millions)': ['365,817', '292,111', '572,754', '287,597', '469,822'], 'Revenue growth': ['33.2%', '2.4%', '11.8%', '32.0%', '21.7%'], 'Employees': ['258,000', '154,000', '1,608,000', '350,000', '2,300,000'], 'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+df_top_10 = df_texas.head(10)
+df_grouped = df_top_10.groupby('Industry').agg({'Revenue (USD millions)': 'sum', 'Employees': 'sum'})
+df_grouped = df_grouped.rename(columns={'Revenue (USD millions)': 'Total Revenue', 'Employees': 'Total Employees'})
+print(df_grouped)
+```
+2023-07-24 11:37:58 [INFO] Answer:                        Total Revenue  Total Employees
+Industry                                             
+Automotive and Energy          53823            99290
+Conglomerate                  168864           202600
+Food Service                   51298            57710
+Health                        238228            67500
+Petroleum industry            624591           109262
+Technology                    106995           133000
+2023-07-24 11:37:58 [INFO] Executed in: 16.80285906791687s
+2023-07-24 11:43:16 [INFO] Question: Draw a table of the 10 biggest companies in Texas, with industry, revenue and number of employees and city (group by industry)
+2023-07-24 11:43:16 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:43:16 [INFO] Prompt ID: 94a45413-547f-48dc-8798-48a040a0f845
+2023-07-24 11:43:16 [INFO] Using cached response
+2023-07-24 11:43:16 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 1, 3, 5], 'Name': ['UnitedHealth Group', 'Apple', 'CVS Health', 'Amazon', 'Walmart'], 'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry'], 'Revenue (USD millions)': ['365,817', '292,111', '572,754', '287,597', '469,822'], 'Revenue growth': ['33.2%', '2.4%', '11.8%', '32.0%', '21.7%'], 'Employees': ['258,000', '154,000', '1,608,000', '350,000', '2,300,000'], 'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+df_top_10 = df_texas.head(10)
+df_grouped = df_top_10.groupby('Industry').agg({'Revenue (USD millions)': 'sum', 'Employees': 'sum'})
+df_grouped = df_grouped.rename(columns={'Revenue (USD millions)': 'Total Revenue', 'Employees': 'Total Employees'})
+print(df_grouped)
+```
+2023-07-24 11:43:17 [INFO] Answer:                        Total Revenue  Total Employees
+Industry                                             
+Automotive and Energy          53823            99290
+Conglomerate                  168864           202600
+Food Service                   51298            57710
+Health                        238228            67500
+Petroleum industry            624591           109262
+Technology                    106995           133000
+2023-07-24 11:43:17 [INFO] Executed in: 0.09374809265136719s
+2023-07-24 11:43:37 [INFO] Question: Draw a barplot of the biggest 5 states by number of company HQ
+2023-07-24 11:43:37 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:43:37 [INFO] Prompt ID: c1313213-55b1-46ea-af14-be23a40bea8f
+2023-07-24 11:43:42 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Sort the dataframe by number of company HQ in descending order
+df_sorted = df.groupby('Headquarters').size().sort_values(ascending=False)
+
+# Get the top 5 states with the most company HQ
+top_5_states = df_sorted.head(5)
+
+# Plot the barplot
+plt.bar(top_5_states.index, top_5_states.values)
+plt.xlabel('State')
+plt.ylabel('Number of Company HQ')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show()
+                        ```
+                    
+2023-07-24 11:43:42 [INFO] 
+Code running:
+```
+df_sorted = df.groupby('Headquarters').size().sort_values(ascending=False)
+top_5_states = df_sorted.head(5)
+plt.bar(top_5_states.index, top_5_states.values)
+plt.xlabel('State')
+plt.ylabel('Number of Company HQ')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:43:42 [INFO] Answer: None
+2023-07-24 11:43:42 [INFO] Executed in: 5.170830011367798s
+2023-07-24 11:45:48 [INFO] Question: Draw a table of the 10 biggest companies in Texas, with industry, revenue and number of employees and city (group by industry)
+2023-07-24 11:45:48 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:45:48 [INFO] Prompt ID: ed85e00e-63bf-4948-96da-4064cb1ee9d6
+2023-07-24 11:45:48 [INFO] Using cached response
+2023-07-24 11:45:48 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 1, 3, 5], 'Name': ['UnitedHealth Group', 'Apple', 'CVS Health', 'Amazon', 'Walmart'], 'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry'], 'Revenue (USD millions)': ['365,817', '292,111', '572,754', '287,597', '469,822'], 'Revenue growth': ['33.2%', '2.4%', '11.8%', '32.0%', '21.7%'], 'Employees': ['258,000', '154,000', '1,608,000', '350,000', '2,300,000'], 'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+df_texas = df[df['Headquarters'].str.contains('Texas')]
+df_texas = df_texas.sort_values(by='Revenue (USD millions)', ascending=False)
+df_top_10 = df_texas.head(10)
+df_grouped = df_top_10.groupby('Industry').agg({'Revenue (USD millions)': 'sum', 'Employees': 'sum'})
+df_grouped = df_grouped.rename(columns={'Revenue (USD millions)': 'Total Revenue', 'Employees': 'Total Employees'})
+print(df_grouped)
+```
+2023-07-24 11:45:48 [INFO] Answer:                        Total Revenue  Total Employees
+Industry                                             
+Automotive and Energy          53823            99290
+Conglomerate                  168864           202600
+Food Service                   51298            57710
+Health                        238228            67500
+Petroleum industry            624591           109262
+Technology                    106995           133000
+2023-07-24 11:45:48 [INFO] Executed in: 0.08095026016235352s
+2023-07-24 11:46:19 [INFO] Question: Draw a bar plot of the 5 biggest states by umber of companes
+2023-07-24 11:46:19 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:46:19 [INFO] Prompt ID: c617fd7b-4899-49c8-bd01-1d82715e0ae4
+2023-07-24 11:46:22 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Sort the dataframe by number of companies in each state
+state_counts = df['Headquarters'].str.split(', ').str[-1].value_counts().sort_values(ascending=False)
+
+# Get the top 5 states
+top_5_states = state_counts.head(5)
+
+# Plot the bar plot
+plt.bar(top_5_states.index, top_5_states.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Companies')
+plt.show()
+                        ```
+                    
+2023-07-24 11:46:22 [INFO] 
+Code running:
+```
+state_counts = df['Headquarters'].str.split(', ').str[-1].value_counts().sort_values(ascending=False)
+top_5_states = state_counts.head(5)
+plt.bar(top_5_states.index, top_5_states.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Companies')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:46:23 [INFO] Answer: None
+2023-07-24 11:46:23 [INFO] Executed in: 3.7361273765563965s
+2023-07-24 11:47:09 [INFO] Question: Draw a bar plot of the 5 biggest states by number of companies
+2023-07-24 11:47:09 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:47:09 [INFO] Prompt ID: 119e9001-a3ab-4afb-b42e-e376906e401c
+2023-07-24 11:47:13 [INFO] 
+                        Code generated:
+                        ```
+                        import matplotlib.pyplot as plt
+
+# Sort the dataframe by number of companies in each state
+state_counts = df['Headquarters'].value_counts().nlargest(5)
+
+# Plot the bar plot
+plt.bar(state_counts.index, state_counts.values)
+
+# Add labels and title
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Companies')
+
+# Show the plot
+plt.show()
+                        ```
+                    
+2023-07-24 11:47:13 [INFO] 
+Code running:
+```
+state_counts = df['Headquarters'].value_counts().nlargest(5)
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Companies')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:47:13 [INFO] Answer: None
+2023-07-24 11:47:13 [INFO] Executed in: 4.101746559143066s
+2023-07-24 11:58:28 [INFO] Question: How many rows
+2023-07-24 11:58:28 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:58:28 [INFO] Prompt ID: cef05b9b-22d9-4f47-a8b8-fdf55919b1d4
+2023-07-24 11:58:28 [INFO] Using cached response
+2023-07-24 11:58:28 [INFO] 
+Code running:
+```
+rows = df.shape[0]
+rows
+```
+2023-07-24 11:58:28 [INFO] Answer: 100
+2023-07-24 11:58:28 [INFO] Executed in: 0.006964683532714844s
+2023-07-24 11:59:02 [INFO] Question: make a barplot of the 5 biggest states by number of company HQ
+2023-07-24 11:59:02 [INFO] Running PandasAI with openai LLM...
+2023-07-24 11:59:02 [INFO] Prompt ID: ca7431fb-95b3-4cee-a1af-d8ddff6104f7
+2023-07-24 11:59:16 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create the dataframe
+data = {'Rank': [2, 1, 3, 4, 5],
+        'Name': ['Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple', 'Amazon'],
+        'Industry': ['Healthcare', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'General merchandisers'],
+        'Revenue (USD millions)': ['365,817', '572,754', '287,597', '292,111', '469,822'],
+        'Revenue growth': ['33.2%', '11.8%', '2.4%', '21.7%', '32.0%'],
+        'Employees': ['1,608,000', '350,000', '258,000', '154,000', '2,300,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the number of companies in each state
+state_counts = df['State'].value_counts().head(5)
+
+# Plot the barplot
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show()
+                        ```
+                    
+2023-07-24 11:59:16 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 1, 3, 4, 5], 'Name': ['Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple', 'Amazon'], 'Industry': ['Healthcare', 'Electronics industry', 'Healthcare', 'Retail and Cloud Computing', 'General merchandisers'], 'Revenue (USD millions)': ['365,817', '572,754', '287,597', '292,111', '469,822'], 'Revenue growth': ['33.2%', '11.8%', '2.4%', '21.7%', '32.0%'], 'Employees': ['1,608,000', '350,000', '258,000', '154,000', '2,300,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Cupertino, California', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Seattle, Washington']}
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_counts = df['State'].value_counts().head(5)
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 11:59:16 [INFO] Answer: None
+2023-07-24 11:59:16 [INFO] Executed in: 13.529981136322021s
+2023-07-24 12:02:05 [INFO] Question: Draw a bar plot of the 5 biggest state by number of company HQ
+2023-07-24 12:02:05 [INFO] Running PandasAI with openai LLM...
+2023-07-24 12:02:05 [INFO] Prompt ID: e8753d6f-3a0c-4bd3-b116-be1f844e7072
+2023-07-24 12:02:17 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the dataframe
+df = pd.DataFrame({
+    'Rank': [2, 5, 3, 1, 4],
+    'Name': ['Walmart', 'CVS Health', 'UnitedHealth Group', 'Apple', 'Amazon'],
+    'Industry': ['Healthcare', 'Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing'],
+    'Revenue (USD millions)': ['365,817', '572,754', '469,822', '287,597', '292,111'],
+    'Revenue growth': ['33.2%', '32.0%', '21.7%', '2.4%', '11.8%'],
+    'Employees': ['1,608,000', '258,000', '154,000', '350,000', '2,300,000'],
+    'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Seattle, Washington', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']
+})
+
+# Extract the state from the Headquarters column
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+
+# Count the number of companies in each state
+state_counts = df['State'].value_counts().nlargest(5)
+
+# Plot the bar plot
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show()
+                        ```
+                    
+2023-07-24 12:02:17 [INFO] 
+Code running:
+```
+df['State'] = df['Headquarters'].apply(lambda x: x.split(', ')[-1])
+state_counts = df['State'].value_counts().nlargest(5)
+plt.bar(state_counts.index, state_counts.values)
+plt.xlabel('State')
+plt.ylabel('Number of Companies')
+plt.title('Top 5 States by Number of Company HQ')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-24 12:02:17 [INFO] Answer: None
+2023-07-24 12:02:17 [INFO] Executed in: 12.092936992645264s
+2023-07-24 12:02:38 [INFO] Question: Combien d'entreprises sont basées au Texas ? 
+2023-07-24 12:02:38 [INFO] Running PandasAI with openai LLM...
+2023-07-24 12:02:38 [INFO] Prompt ID: b662445c-8338-4d8c-af1c-bc42563eaaff
+2023-07-24 12:02:42 [INFO] 
+                        Code generated:
+                        ```
+                        df['Headquarters'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+count_texas = df[df['Headquarters'] == 'Texas'].shape[0]
+count_texas
+                        ```
+                    
+2023-07-24 12:02:42 [INFO] 
+Code running:
+```
+df['Headquarters'] = df['Headquarters'].str.split(',').str[-1].str.strip()
+count_texas = df[df['Headquarters'] == 'Texas'].shape[0]
+count_texas
+```
+2023-07-24 12:02:42 [INFO] Answer: 14
+2023-07-24 12:02:42 [INFO] Executed in: 4.639923334121704s
+2023-07-24 12:02:59 [INFO] Question: What's the fastest growing company
+2023-07-24 12:02:59 [INFO] Running PandasAI with openai LLM...
+2023-07-24 12:02:59 [INFO] Prompt ID: 13bf14a0-13a9-49d9-b509-85e9ddbeef2d
+2023-07-24 12:03:02 [INFO] 
+                        Code generated:
+                        ```
+                        fastest_growing_company = df[df['Revenue growth'] == df['Revenue growth'].max()]['Name'].values[0]
+fastest_growing_company
+                        ```
+                    
+2023-07-24 12:03:02 [INFO] 
+Code running:
+```
+fastest_growing_company = df[df['Revenue growth'] == df['Revenue growth'].max()]['Name'].values[0]
+fastest_growing_company
+```
+2023-07-24 12:03:02 [INFO] Answer: Pfizer
+2023-07-24 12:03:02 [INFO] Executed in: 2.054630994796753s
+2023-07-24 12:03:52 [INFO] Question: Fais une table des plus grosses entreprises par état, en indiquant les revenus, le nombre de salarié et le growth
+2023-07-24 12:03:52 [INFO] Running PandasAI with openai LLM...
+2023-07-24 12:03:52 [INFO] Prompt ID: 5c1cd150-0c19-405c-8224-6407e413f917
+2023-07-24 12:04:07 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [1, 4, 2, 5, 3],
+        'Name': ['CVS Health', 'Amazon', 'Walmart', 'UnitedHealth Group', 'Apple'],
+        'Industry': ['Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Healthcare'],
+        'Revenue (USD millions)': ['292,111', '365,817', '287,597', '572,754', '469,822'],
+        'Revenue growth': ['2.4%', '32.0%', '21.7%', '11.8%', '33.2%'],
+        'Employees': ['154,000', '258,000', '2,300,000', '350,000', '1,608,000'],
+        'Headquarters': ['Seattle, Washington', 'Bentonville, Arkansas', 'Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Split the Headquarters column into State and City
+df[['City', 'State']] = df['Headquarters'].str.split(', ', expand=True)
+
+# Convert Revenue and Employees columns to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Sort the dataframe by State and Revenue in descending order
+df = df.sort_values(['State', 'Revenue (USD millions)'], ascending=[True, False])
+
+# Group the dataframe by State and get the top company for each state
+top_companies_by_state = df.groupby('State').first().reset_index()
+
+# Select the desired columns
+top_companies_by_state = top_companies_by_state[['State', 'Name', 'Revenue (USD millions)', 'Employees', 'Revenue growth']]
+
+# Print the table
+print(top_companies_by_state)
+                        ```
+                    
+2023-07-24 12:04:07 [INFO] 
+Code running:
+```
+data = {'Rank': [1, 4, 2, 5, 3], 'Name': ['CVS Health', 'Amazon', 'Walmart', 'UnitedHealth Group', 'Apple'], 'Industry': ['Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry', 'Healthcare'], 'Revenue (USD millions)': ['292,111', '365,817', '287,597', '572,754', '469,822'], 'Revenue growth': ['2.4%', '32.0%', '21.7%', '11.8%', '33.2%'], 'Employees': ['154,000', '258,000', '2,300,000', '350,000', '1,608,000'], 'Headquarters': ['Seattle, Washington', 'Bentonville, Arkansas', 'Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island']}
+df[['City', 'State']] = df['Headquarters'].str.split(', ', expand=True)
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+top_companies_by_state = df.groupby('State').first().reset_index()
+top_companies_by_state = top_companies_by_state[['State', 'Name', 'Revenue (USD millions)', 'Employees', 'Revenue growth']]
+print(top_companies_by_state)
+```
+2023-07-24 12:04:07 [WARNING] Error executing code (count: 0)
+2023-07-24 12:04:22 [WARNING] Error executing code (count: 1)
+2023-07-24 12:04:38 [WARNING] Error executing code (count: 2)
+2023-07-24 12:04:54 [INFO] Answer: 
+2023-07-24 12:04:54 [INFO] Executed in: 62.15004301071167s
+2023-07-24 13:17:54 [INFO] Question: Explique moi ces données
+2023-07-24 13:17:54 [INFO] Running PandasAI with openai LLM...
+2023-07-24 13:17:54 [INFO] Prompt ID: e1bfec88-d51c-4f52-947e-da3d37d9f84e
+2023-07-24 13:18:07 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [5, 4, 1, 2, 3],
+        'Name': ['Apple', 'CVS Health', 'UnitedHealth Group', 'Amazon', 'Walmart'],
+        'Industry': ['Healthcare', 'Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry'],
+        'Revenue (USD millions)': ['365,817', '572,754', '469,822', '287,597', '292,111'],
+        'Revenue growth': ['33.2%', '2.4%', '32.0%', '21.7%', '11.8%'],
+        'Employees': ['154,000', '258,000', '2,300,000', '350,000', '1,608,000'],
+        'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-24 13:18:07 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 4, 1, 2, 3], 'Name': ['Apple', 'CVS Health', 'UnitedHealth Group', 'Amazon', 'Walmart'], 'Industry': ['Healthcare', 'Retail and Cloud Computing', 'General merchandisers', 'Healthcare', 'Electronics industry'], 'Revenue (USD millions)': ['365,817', '572,754', '469,822', '287,597', '292,111'], 'Revenue growth': ['33.2%', '2.4%', '32.0%', '21.7%', '11.8%'], 'Employees': ['154,000', '258,000', '2,300,000', '350,000', '1,608,000'], 'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Cupertino, California', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island']}
+print(df)
+```
+2023-07-24 13:18:08 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-24 13:18:08 [INFO] Executed in: 13.581327676773071s
+2023-07-24 13:18:22 [INFO] Question: Summarize this table
+2023-07-24 13:18:22 [INFO] Running PandasAI with openai LLM...
+2023-07-24 13:18:22 [INFO] Prompt ID: 45616ee5-f728-4796-bbf1-7f24f0b3888c
+2023-07-24 13:18:30 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [5, 2, 4, 1, 3],
+        'Name': ['Apple', 'Walmart', 'UnitedHealth Group', 'CVS Health', 'Amazon'],
+        'Industry': ['Retail and Cloud Computing', 'Electronics industry', 'Healthcare', 'Healthcare', 'General merchandisers'],
+        'Revenue (USD millions)': ['469,822', '287,597', '292,111', '365,817', '572,754'],
+        'Revenue growth': ['11.8%', '32.0%', '33.2%', '2.4%', '21.7%'],
+        'Employees': ['154,000', '350,000', '1,608,000', '258,000', '2,300,000'],
+        'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Print the summary of the dataframe
+print(df.describe())
+                        ```
+                    
+2023-07-24 13:18:30 [INFO] 
+Code running:
+```
+data = {'Rank': [5, 2, 4, 1, 3], 'Name': ['Apple', 'Walmart', 'UnitedHealth Group', 'CVS Health', 'Amazon'], 'Industry': ['Retail and Cloud Computing', 'Electronics industry', 'Healthcare', 'Healthcare', 'General merchandisers'], 'Revenue (USD millions)': ['469,822', '287,597', '292,111', '365,817', '572,754'], 'Revenue growth': ['11.8%', '32.0%', '33.2%', '2.4%', '21.7%'], 'Employees': ['154,000', '350,000', '1,608,000', '258,000', '2,300,000'], 'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Bentonville, Arkansas']}
+print(df.describe())
+```
+2023-07-24 13:18:30 [INFO] Answer:              Rank
+count  100.000000
+mean    50.500000
+std     29.011492
+min      1.000000
+25%     25.750000
+50%     50.500000
+75%     75.250000
+max    100.000000
+2023-07-24 13:18:30 [INFO] Executed in: 7.8807618618011475s
+2023-07-26 15:06:42 [INFO] Question: explain this file
+2023-07-26 15:06:42 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:06:42 [INFO] Prompt ID: 3c1e7dc9-f894-4af8-ade5-bab44397e76f
+2023-07-26 15:06:51 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 4, 3, 5, 1],
+        'Name': ['CVS Health', 'Apple', 'Amazon', 'UnitedHealth Group', 'Walmart'],
+        'Industry': ['Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'],
+        'Revenue (USD millions)': ['469,822', '287,597', '365,817', '572,754', '292,111'],
+        'Revenue growth': ['11.8%', '21.7%', '2.4%', '33.2%', '32.0%'],
+        'Employees': ['2,300,000', '1,608,000', '350,000', '258,000', '154,000'],
+        'Headquarters': ['Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Cupertino, California', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Print the dataframe
+print(df)
+                        ```
+                    
+2023-07-26 15:06:51 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 3, 5, 1], 'Name': ['CVS Health', 'Apple', 'Amazon', 'UnitedHealth Group', 'Walmart'], 'Industry': ['Electronics industry', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare'], 'Revenue (USD millions)': ['469,822', '287,597', '365,817', '572,754', '292,111'], 'Revenue growth': ['11.8%', '21.7%', '2.4%', '33.2%', '32.0%'], 'Employees': ['2,300,000', '1,608,000', '350,000', '258,000', '154,000'], 'Headquarters': ['Woonsocket, Rhode Island', 'Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Cupertino, California', 'Seattle, Washington']}
+print(df)
+```
+2023-07-26 15:06:52 [INFO] Answer:     Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+2023-07-26 15:06:52 [INFO] Executed in: 9.86604356765747s
+2023-07-26 15:07:10 [INFO] Question: What's the richest state ? 
+2023-07-26 15:07:10 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:07:10 [INFO] Prompt ID: 856517ba-287e-49c5-be05-7dffa3990afa
+2023-07-26 15:07:12 [INFO] 
+                        Code generated:
+                        ```
+                        df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+richest_state = df.groupby('Headquarters')['Revenue (USD millions)'].sum().idxmax()
+richest_state
+                        ```
+                    
+2023-07-26 15:07:12 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+richest_state = df.groupby('Headquarters')['Revenue (USD millions)'].sum().idxmax()
+richest_state
+```
+2023-07-26 15:07:12 [INFO] Answer: New York City, New York
+2023-07-26 15:07:12 [INFO] Executed in: 2.2227656841278076s
+2023-07-26 15:07:22 [INFO] Question: What's the richest state ? give a table to explain it
+2023-07-26 15:07:22 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:07:22 [INFO] Prompt ID: af2e887c-84b3-45c8-993d-21410b795e7e
+2023-07-26 15:07:34 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [4, 3, 5, 1, 2],
+        'Name': ['Apple', 'CVS Health', 'UnitedHealth Group', 'Amazon', 'Walmart'],
+        'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry'],
+        'Revenue (USD millions)': ['292,111', '287,597', '365,817', '469,822', '572,754'],
+        'Revenue growth': ['33.2%', '32.0%', '2.4%', '11.8%', '21.7%'],
+        'Employees': ['350,000', '1,608,000', '258,000', '2,300,000', '154,000'],
+        'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Convert 'Revenue (USD millions)' column to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+
+# Sort the dataframe by 'Revenue (USD millions)' in descending order
+df_sorted = df.sort_values(by='Revenue (USD millions)', ascending=False)
+
+# Get the richest state
+richest_state = df_sorted.iloc[0]['Headquarters']
+
+# Print the table
+print(df_sorted)
+print('The richest state is:', richest_state)
+                        ```
+                    
+2023-07-26 15:07:34 [INFO] 
+Code running:
+```
+data = {'Rank': [4, 3, 5, 1, 2], 'Name': ['Apple', 'CVS Health', 'UnitedHealth Group', 'Amazon', 'Walmart'], 'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Healthcare', 'Electronics industry'], 'Revenue (USD millions)': ['292,111', '287,597', '365,817', '469,822', '572,754'], 'Revenue growth': ['33.2%', '32.0%', '2.4%', '11.8%', '21.7%'], 'Employees': ['350,000', '1,608,000', '258,000', '2,300,000', '154,000'], 'Headquarters': ['Seattle, Washington', 'Minnetonka, Minnesota', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Bentonville, Arkansas']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df_sorted = df.sort_values(by='Revenue (USD millions)', ascending=False)
+richest_state = df_sorted.iloc[0]['Headquarters']
+print(df_sorted)
+print('The richest state is:', richest_state)
+```
+2023-07-26 15:07:34 [INFO] Answer: Rank                 Name  ...  Employees                    Headquarters
+0      1              Walmart  ...  2,300,000           Bentonville, Arkansas
+1      2               Amazon  ...  1,608,000             Seattle, Washington
+2      3                Apple  ...    154,000           Cupertino, California
+3      4           CVS Health  ...    258,000        Woonsocket, Rhode Island
+4      5   UnitedHealth Group  ...    350,000           Minnetonka, Minnesota
+..   ...                  ...  ...        ...                             ...
+95    96     General Dynamics  ...    103,100                Reston, Virginia
+96    97                  CHS  ...      9,941  Inver Grove Heights, Minnesota
+97    98                 USAA  ...     37,335              San Antonio, Texas
+98    99  Northwestern Mutual  ...      7,585            Milwaukee, Wisconsin
+99   100                Nucor  ...     28,800       Charlotte, North Carolina
+
+[100 rows x 7 columns]
+The richest state is: Bentonville, Arkansas
+2023-07-26 15:07:34 [INFO] Executed in: 12.139433145523071s
+2023-07-26 15:08:09 [INFO] Question: what's the state that has the max revenue and most companies ? 
+2023-07-26 15:08:09 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:08:09 [INFO] Prompt ID: efb3c479-0977-4476-9053-22f00f56ff37
+2023-07-26 15:08:22 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [1, 3, 4, 5, 2],
+        'Name': ['Apple', 'Walmart', 'UnitedHealth Group', 'CVS Health', 'Amazon'],
+        'Industry': ['Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Electronics industry'],
+        'Revenue (USD millions)': ['292,111', '287,597', '365,817', '469,822', '572,754'],
+        'Revenue growth': ['2.4%', '33.2%', '11.8%', '21.7%', '32.0%'],
+        'Employees': ['350,000', '154,000', '258,000', '1,608,000', '2,300,000'],
+        'Headquarters': ['Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Seattle, Washington']}
+
+df = pd.DataFrame(data)
+
+# Clean the 'Revenue (USD millions)' column
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+
+# Get the state with the max revenue
+max_revenue_state = df.loc[df['Revenue (USD millions)'].idxmax(), 'Headquarters'].split(', ')[-1]
+
+# Get the number of companies in each state
+state_counts = df['Headquarters'].apply(lambda x: x.split(', ')[-1]).value_counts()
+
+# Get the state with the most companies
+most_companies_state = state_counts.idxmax()
+
+max_revenue_state, most_companies_state
+                        ```
+                    
+2023-07-26 15:08:22 [INFO] 
+Code running:
+```
+data = {'Rank': [1, 3, 4, 5, 2], 'Name': ['Apple', 'Walmart', 'UnitedHealth Group', 'CVS Health', 'Amazon'], 'Industry': ['Healthcare', 'General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Electronics industry'], 'Revenue (USD millions)': ['292,111', '287,597', '365,817', '469,822', '572,754'], 'Revenue growth': ['2.4%', '33.2%', '11.8%', '21.7%', '32.0%'], 'Employees': ['350,000', '154,000', '258,000', '1,608,000', '2,300,000'], 'Headquarters': ['Minnetonka, Minnesota', 'Bentonville, Arkansas', 'Woonsocket, Rhode Island', 'Cupertino, California', 'Seattle, Washington']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+max_revenue_state = df.loc[df['Revenue (USD millions)'].idxmax(), 'Headquarters'].split(', ')[-1]
+state_counts = df['Headquarters'].apply(lambda x: x.split(', ')[-1]).value_counts()
+most_companies_state = state_counts.idxmax()
+max_revenue_state, most_companies_state
+```
+2023-07-26 15:08:22 [INFO] Answer: Arkansas New York
+2023-07-26 15:08:22 [INFO] Executed in: 13.150587558746338s
+2023-07-26 15:08:43 [INFO] Question: is revenue and employee numbers correlated ? 
+2023-07-26 15:08:43 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:08:43 [INFO] Prompt ID: e62dcb46-5e8b-4d70-9c07-7fb95263a888
+2023-07-26 15:08:55 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+
+# Create the dataframe
+data = {'Rank': [2, 4, 1, 3, 5],
+        'Name': ['UnitedHealth Group', 'Walmart', 'Amazon', 'CVS Health', 'Apple'],
+        'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Electronics industry', 'Healthcare'],
+        'Revenue (USD millions)': ['292,111', '287,597', '365,817', '469,822', '572,754'],
+        'Revenue growth': ['2.4%', '21.7%', '32.0%', '33.2%', '11.8%'],
+        'Employees': ['1,608,000', '154,000', '258,000', '2,300,000', '350,000'],
+        'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Bentonville, Arkansas']}
+
+df = pd.DataFrame(data)
+
+# Convert revenue and employees columns to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Calculate correlation between revenue and employees
+correlation = df['Revenue (USD millions)'].corr(df['Employees'])
+
+correlation
+                        ```
+                    
+2023-07-26 15:08:55 [INFO] 
+Code running:
+```
+data = {'Rank': [2, 4, 1, 3, 5], 'Name': ['UnitedHealth Group', 'Walmart', 'Amazon', 'CVS Health', 'Apple'], 'Industry': ['General merchandisers', 'Healthcare', 'Retail and Cloud Computing', 'Electronics industry', 'Healthcare'], 'Revenue (USD millions)': ['292,111', '287,597', '365,817', '469,822', '572,754'], 'Revenue growth': ['2.4%', '21.7%', '32.0%', '33.2%', '11.8%'], 'Employees': ['1,608,000', '154,000', '258,000', '2,300,000', '350,000'], 'Headquarters': ['Minnetonka, Minnesota', 'Cupertino, California', 'Woonsocket, Rhode Island', 'Seattle, Washington', 'Bentonville, Arkansas']}
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(int)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+correlation = df['Revenue (USD millions)'].corr(df['Employees'])
+correlation
+```
+2023-07-26 15:08:55 [INFO] Answer: 0.7046962356848901
+2023-07-26 15:08:55 [INFO] Executed in: 11.971660852432251s
+2023-07-26 15:09:21 [INFO] Question: draw a graph of revenue v employee (color by state)
+2023-07-26 15:09:21 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:09:21 [INFO] Prompt ID: faccd4c2-a8e8-4e20-8c64-d40ad8a9057d
+2023-07-26 15:09:27 [INFO] 
+                        Code generated:
+                        ```
+                        import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the dataframe
+df = pd.read_csv('data.csv')
+
+# Convert revenue and employees columns to numeric
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+
+# Create a scatter plot of revenue vs employees, color by state
+plt.scatter(df['Employees'], df['Revenue (USD millions)'], c=df['Headquarters'])
+plt.xlabel('Number of Employees')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Revenue vs Employees (Color by State)')
+plt.colorbar(label='State')
+plt.show()
+                        ```
+                    
+2023-07-26 15:09:27 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+plt.scatter(df['Employees'], df['Revenue (USD millions)'], c=df['Headquarters'])
+plt.xlabel('Number of Employees')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Revenue vs Employees (Color by State)')
+plt.colorbar(label='State')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-26 15:09:27 [WARNING] Error executing code (count: 0)
+2023-07-26 15:09:33 [WARNING] Error executing code (count: 1)
+2023-07-26 15:09:39 [WARNING] Error executing code (count: 2)
+2023-07-26 15:09:45 [INFO] Answer: None
+2023-07-26 15:09:45 [INFO] Executed in: 23.697614192962646s
+2023-07-26 15:10:11 [INFO] Question: draw a graph of revenue v employee (color by state)
+2023-07-26 15:10:11 [INFO] Running PandasAI with openai LLM...
+2023-07-26 15:10:11 [INFO] Prompt ID: 1699d320-4a7c-42fd-addb-d32d18242c47
+2023-07-26 15:10:11 [INFO] Using cached response
+2023-07-26 15:10:11 [INFO] 
+Code running:
+```
+df['Revenue (USD millions)'] = df['Revenue (USD millions)'].str.replace(',', '').astype(float)
+df['Employees'] = df['Employees'].str.replace(',', '').astype(int)
+plt.scatter(df['Employees'], df['Revenue (USD millions)'], c=df['Headquarters'])
+plt.xlabel('Number of Employees')
+plt.ylabel('Revenue (USD millions)')
+plt.title('Revenue vs Employees (Color by State)')
+plt.colorbar(label='State')
+plt.show(block=False)
+plt.close('all')
+```
+2023-07-26 15:10:11 [WARNING] Error executing code (count: 0)
+2023-07-26 15:10:19 [WARNING] Error executing code (count: 1)
+2023-07-26 15:10:25 [WARNING] Error executing code (count: 2)
+2023-07-26 15:10:31 [INFO] Answer: None
+2023-07-26 15:10:31 [INFO] Executed in: 19.39499068260193s
